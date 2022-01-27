@@ -3,6 +3,7 @@
 </template>
 
 <style lang="scss">
+@import "~@/assets/scss/vendors/bootstrap-vue/index";
 * { margin: 0; padding: 0; }
 
 html, body, #app {
