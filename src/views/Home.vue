@@ -1,6 +1,13 @@
 <template>
   <div class="home">
-    <EmManutencao />
+    <div v-show="this.manut == 1">
+        <EmManutencao />
+    </div>
+
+    <!-- seção principal -->
+    <section v-show="this.manut == 0" class="principal">
+        oi
+    </section>
   </div>
 </template>
 
@@ -10,6 +17,12 @@ import EmManutencao from '@/components/EmManutencao.vue'
 
 export default {
   name: 'Home',
+  data() {
+      return {
+        // manutencao
+          manut: 0
+      }
+  },
   components: {
     EmManutencao
   }
@@ -19,8 +32,6 @@ export default {
 <style lang="scss" scoped>
     .home {
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
     }
 </style>
