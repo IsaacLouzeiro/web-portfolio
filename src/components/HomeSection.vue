@@ -25,6 +25,8 @@
 
                 <a href="https://isaac-resume.firebaseapp.com/" target="_blank" class="btn mt-3"><font-awesome-icon :icon="['fas', 'window-maximize']" /> {{ btnWebResume }}</a>
             </section>
+
+            <a href="#About" class="scrollDown bounce">{{ scrollDown }} <font-awesome-icon :icon="['fas', 'long-arrow-alt-right']" class="arrow" /></a>
         </div>
     </section>
 </template>
@@ -42,15 +44,25 @@ export default {
             myName: "Isaac Louzeiro",
             profession: "Front-end Developer",
             textWebResume: "My Website Resume is on the link below",
-            btnWebResume: "Web Resume"
+            btnWebResume: "Web Resume",
+            scrollDown: "scroll down"
+        }
+    },
+    created() {
+        var windowWidth = window.innerWidth;
+        if(windowWidth < 768) {
+            this.scrollDown = "swipe up"
+        }else {
+            this.scrollDown = "scroll down"
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
-    @import '../assets/scss/writingAnimation.scss';
     @import '../assets/scss/colors.scss';
+    @import '../assets/scss/writingAnimation.scss';
+    @import '../assets/scss/arrowAnimation.scss';
 
     #Home {
         background-color: $color1;
@@ -101,6 +113,7 @@ export default {
     .areaLateral {
         background-color: $color2;
         min-height: 400px;
+        position: relative;
 
         section {
             
@@ -135,6 +148,20 @@ export default {
                 &:hover {
                     background-color: $color3;
                 }
+            }
+        }
+
+        .scrollDown {
+                position: absolute;
+                bottom: 50px;
+                right: -25px;
+                text-decoration: none;
+                color: $color5;
+                display: flex;
+                align-items: center;
+
+            .arrow {
+                margin-left: 5px;
             }
         }
     }
