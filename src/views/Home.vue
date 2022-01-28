@@ -57,4 +57,12 @@ export default {
         background-color: $color5;
     }
 
+    main {
+        margin-left: 70px;
+
+        @media only screen and (max-width: 768px) {
+            margin-left: 65px;
+        }
+    }
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <nav class="d-flex flex-column justify-content-between">
+    <nav class="d-flex flex-column justify-content-between fixed-top">
         <div class="box-lang dropdown">
             <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" />
