@@ -2,7 +2,7 @@
     <nav class="d-flex flex-column justify-content-between">
         <div class="box-lang dropdown">
             <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <font-awesome-icon :icon="['fas', 'language']" />
+                <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">pt-br</a></li>
@@ -55,7 +55,11 @@ export default {
                 height: 55px;
                 color: $color4;
                 background-color: $color2;
-                font-size: 1.3em;
+                font-size: 1.2em;
+
+                .icon-lang {
+                    font-size: 1.35em;
+                }
 
                 &::after {
                     color: $color5;
@@ -63,22 +67,22 @@ export default {
             }
             
             .dropdown-menu {
-                background-color: $color5;
+                background-color: $color1;
                 min-width: 100px;
                 border: 0;
                 box-shadow: 1px 1px 5px rgba(117, 117, 117, 0.3);
 
                 a {
-                    color: $color1;
+                    color: $color5;
 
                     &:hover, &:focus {
-                        opacity: .5;
+                        background-color: $color3
                     }
                 }
 
                 .active {
-                    background-color: $color1;
-                    color: $color5;
+                    background-color: $color5;
+                    color: $color2;
                 }
             }
         }
@@ -87,15 +91,16 @@ export default {
             li {
                 a {
                     display: inline-block;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     width: 80%;
-                    margin: 5px 0;
+                    margin: 1px 0;
                     padding: 7px 10px;
-                    border-radius: 8px;
+                    border-radius: 4px;
                     color: $color1;
 
                     &:hover, &:active {
                         background-color: $color5;
+                        color: $color2;
                     }
                 }
             }
@@ -104,21 +109,23 @@ export default {
         .social-network {
             margin-bottom: 10px;
             a {
-                display: inline-block;
-                max-height: 35px;
-                font-size: 1.8em;
-                margin: 3px 0;
+                font-size: 1.6em;
                 color: $color1;
+                margin: 2px auto;
+                display: flex;
 
                 &:hover {
-                    opacity: .7;
+                    color: $color2;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 1.6em;
                 }
             }
         }
 
         @media only screen and (max-width: 768px) {
             max-width: 65px;
-            font-size: .9em;
         }
     }
 </style>

@@ -28,7 +28,7 @@ export default {
   data() {
       return {
         // manutencao
-          manut: 1
+          manut: 0
       }
   },
   components: {
