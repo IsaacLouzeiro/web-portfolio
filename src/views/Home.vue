@@ -5,12 +5,13 @@
     </div>
 
     <!-- site funcional -->
-    <section v-show="this.manut == 0" class="principal">
+    <section v-show="this.manut == 0" class="principal d-flex">
         <!-- menu navegação -->
         <NavBar />
+
         <!-- conteudo principal -->
-        <main>
-            
+        <main class="w-100">
+            <HomeSection />    
         </main>
         <!-- // conteudo principal -->
     </section>
@@ -22,6 +23,7 @@
 // @ is an alias to /src
 import EmManutencao from '@/components/EmManutencao.vue'
 import NavBar from '@/components/NavBar.vue'
+import HomeSection from '@/components/HomeSection.vue'
 
 export default {
   name: 'Home',
@@ -33,7 +35,8 @@ export default {
   },
   components: {
     EmManutencao,
-    NavBar
+    NavBar,
+    HomeSection
   }
 }
 </script>
@@ -41,7 +44,7 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/scss/colors.scss';
 
-    .home, .principal {
+    .home, .principal, body {
         height: 100%;
         background-color: $color3;
     }
@@ -53,6 +56,5 @@ export default {
         align-items: center;
         background-color: $color5;
     }
-
 
 </style>
