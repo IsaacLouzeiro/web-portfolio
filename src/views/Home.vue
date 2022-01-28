@@ -28,7 +28,7 @@ export default {
   data() {
       return {
         // manutencao
-          manut: 0
+          manut: 1
       }
   },
   components: {
@@ -47,7 +47,6 @@ export default {
     }
 
     .manutencao {
-        border: 1px solid;
         height: 100%;
         display: flex;
         justify-content: center;
