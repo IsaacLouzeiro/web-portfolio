@@ -34,27 +34,17 @@
 <script>
 export default {
     name: 'HomeSection',
-    data() {
-        return {
-            welcome: "Welcome to my website.",
-            subtitleSection: "Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.",
-            btnWhoIam: "Who I'am?",
-            btnProjects: "Projects",
-            btnContact: "Contact",
-            myName: "Isaac Louzeiro",
-            profession: "Front-end Developer",
-            textWebResume: "My Website Resume is on the link below",
-            btnWebResume: "Web Resume",
-            scrollDown: "scroll down"
-        }
-    },
-    created() {
-        var windowWidth = window.innerWidth;
-        if(windowWidth < 768) {
-            this.scrollDown = "swipe up"
-        }else {
-            this.scrollDown = "scroll down"
-        }
+    props: {
+        welcome: String,
+        subtitleSection: String,
+        btnWhoIam: String,
+        btnProjects: String,
+        btnContact: String,
+        myName: String,
+        profession: String,
+        textWebResume: String,
+        btnWebResume: String,
+        scrollDown: String
     }
 }
 </script>

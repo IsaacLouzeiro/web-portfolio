@@ -11,7 +11,7 @@
 
         <!-- conteudo principal -->
         <main class="w-100">
-            <HomeSection />    
+            <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
         </main>
         <!-- // conteudo principal -->
     </section>
@@ -26,18 +26,47 @@ import NavBar from '@/components/NavBar.vue'
 import HomeSection from '@/components/HomeSection.vue'
 
 export default {
-  name: 'Home',
-  data() {
-      return {
-        // manutencao
-          manut: 0
-      }
-  },
-  components: {
-    EmManutencao,
-    NavBar,
-    HomeSection
-  }
+    name: 'Home',
+    data() {
+        return {
+            // manutencao
+            manut: 0,
+
+            // HomeSection.vue
+            welcome: "Welcome to my website.",
+            subtitleSectionHome: "Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.",
+            btnWhoIam: "Who I'am?",
+            btnProjects: "Projects",
+            btnContact: "Contact",
+            myName: "Isaac Louzeiro",
+            profession: "Front-end Developer",
+            textWebResume: "My Website Resume is on the link below",
+            btnWebResume: "Web Resume",
+            scrollDown: "scroll down"
+            // EM PORTUGUÊS
+            // welcome: "Bem vindo ao meu site.",
+            // subtitleSectionHome: "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
+            // btnWhoIam: "Quem sou eu?",
+            // btnProjects: "Projetos",
+            // btnContact: "Contato",
+            // myName: "Isaac Louzeiro",
+            // profession: "Desenvolvedor Front-end",
+            // textWebResume: "Meu Site-Currículo está no link a baixo",
+            // btnWebResume: "Currículo Web",
+            // scrollDown: "Rolar à baixo"
+        }
+    },
+    components: {
+        EmManutencao,
+        NavBar,
+        HomeSection
+    },
+    created() {
+        var windowWidth = window.innerWidth;
+        if(windowWidth < 768) {
+            this.scrollDown = "swipe up"
+        }
+    }
 }
 </script>
 
