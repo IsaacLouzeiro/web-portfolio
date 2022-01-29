@@ -23,7 +23,10 @@
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
 * { margin: 0; padding: 0; box-sizing: border-box; transition: all .1s; }
+
 
 body {
     overflow: hidden;
@@ -34,7 +37,7 @@ html, body, #app {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

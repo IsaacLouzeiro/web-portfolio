@@ -119,7 +119,7 @@ export default {
                     padding: 15px 0;
 
                     h3 {
-                        font-size: 1.3em;
+                        font-size: 1.4em;
                         padding: 10px 0;
                     }
 
@@ -137,6 +137,8 @@ export default {
                     }
 
                     .boxSoftSkill {
+                        padding-bottom: 7px;
+                        display: inline-block;
                         .circleSkill {
                             width: 15px;
                             height: 15px;
