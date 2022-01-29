@@ -97,6 +97,10 @@ export default {
 
                 @media only screen and (max-width: 768px) {
                     max-width: 100%;
+                    padding: 0 15px;
+                }
+
+                @media only screen and (max-width: 375px) {
                     padding: 0 8px;
                 }
             }
@@ -108,51 +112,55 @@ export default {
         position: relative;
 
         section {
-                h2 {
-                    font-size: 1.7em;
+            h2 {
+                font-size: 1.7em;
+            }
+
+            .subSkills {
+                max-width: 83%;
+                margin: auto;
+                text-align: left;
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 1.4em;
+                    padding: 10px 0;
                 }
 
-                .subSkills {
-                    max-width: 83%;
-                    margin: auto;
-                    text-align: left;
-                    padding: 15px 0;
+                .boxSkills {
+                    background-color: $color4;
+                    padding: 4px 7px;
+                    margin: 0 7px 7px 0;
+                    display: inline-block;
+                    font-size: .9em;
 
-                    h3 {
-                        font-size: 1.4em;
-                        padding: 10px 0;
+                    img {
+                        width: 20px;
+                        height: 20px;
                     }
+                }
 
-                    .boxSkills {
+                .boxSoftSkill {
+                    padding-bottom: 7px;
+                    display: inline-block;
+                    .circleSkill {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 10px;
                         background-color: $color4;
-                        padding: 4px 7px;
-                        margin: 0 7px 7px 0;
                         display: inline-block;
-                        font-size: .9em;
-
-                        img {
-                            width: 20px;
-                            height: 20px;
-                        }
                     }
+                }
 
-                    .boxSoftSkill {
-                        padding-bottom: 7px;
-                        display: inline-block;
-                        .circleSkill {
-                            width: 15px;
-                            height: 15px;
-                            border-radius: 10px;
-                            background-color: $color4;
-                            display: inline-block;
-                        }
-                    }
-
-                    @media only screen and (max-width: 768px) {
+                @media only screen and (max-width: 768px) {
                     max-width: 100%;
                     padding: 0 15px;
                 }
+
+                @media only screen and (max-width: 375px) {
+                    padding: 0 8px;
                 }
+            }
         }
     }
 </style>

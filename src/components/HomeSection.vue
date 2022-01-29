@@ -90,11 +90,27 @@ export default {
 
                 @media only screen and (max-width: 768px) {
                     max-width: 100%;
-                    padding: 0 8px;
+                    padding: 0 15px;
+
+                    h2 {
+                        font-size: 1.55em;
+                    }
 
                     p {
-                    font-size: 1.05em;
+                        font-size: 1.05em;
+                    }
                 }
+
+                @media only screen and (max-width: 375px) {
+                    padding: 0 8px;
+
+                    h2 {
+                        font-size: 1.3em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
                 }
             }
 
