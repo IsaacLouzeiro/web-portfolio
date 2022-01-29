@@ -1,14 +1,32 @@
 <template>
-    <section id="About" class="w-100 h-100 row g-0">
+    <section id="About" class="w-100 row g-0">
         <div class="col-lg-8 col-12 areaPrincipal">
             <div class="PrincConteudo w-100 h-100 d-flex align-items-center justify-content-center">
-                
+                <section class="w-100">
+                    <h2 class="mt-4">{{ titleSection }}</h2>
+
+                    <p v-for="text in aboutText" :key="text.aboutText" class="my-2">{{ text }}</p>
+
+                    <span class="mt-3 d-inline-block">{{ moreDetails }}</span><br>
+
+                    <a href="https://isaac-resume.firebaseapp.com/" target="_blank" class="btn mt-2 mb-4"><font-awesome-icon :icon="['fas', 'window-maximize']" /> {{ btnWebResume }}</a>
+                </section>
             </div>
         </div>
 
         <div class="col-lg-4 col-12 areaLateral d-flex align-items-center justify-content-center">
-            <section>
-                
+            <section class="w-100">
+                <h2 class="my-4">{{ titleSkills }}</h2>
+
+                <div class="subSkills">
+                    <h3>{{ hardSkill }}</h3>
+                    
+                    <span class="boxSkills" v-for="item in boxSkill" :key="item.boxSkill"><img :src="item.linkImg" :alt="item.name"> {{ item.name }}</span>
+                </div>
+
+                <div class="subSkills">
+                    <h3>{{ softSkill }}</h3>
+                </div>
             </section>
         </div>
     </section>
@@ -16,16 +34,29 @@
 
 <script>
 export default {
-    name: 'AboutSection'
+    name: 'AboutSection',
+    props: {
+        scrollDown: String,
+        titleSection: String,
+        aboutText: Array,
+        moreDetails: String,
+        btnWebResume: String,
+        titleSkills: String,
+        hardSkill: String,
+        softSkill: String,
+        boxSkill: Array
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     @import '../assets/scss/colors.scss';
+    @import '../assets/scss/arrowAnimation.scss';
 
     #About {
         background-color: $color1;
         color: $color5;
+        min-height: 100%;
     }
 
     .areaPrincipal {
@@ -35,12 +66,79 @@ export default {
         min-height: 200px;
         .PrincConteudo {
             background-color: rgba($color1, 0.83);
+
+            section {
+                text-align: left;
+                max-width: 80%;
+
+                h2 {
+                    color: $color4;
+                    font-size: 1.7em;
+                }
+
+                p {
+                    font-size: 1.05em;
+                }
+
+                span {
+                    font-size: 1.2em;
+                }
+
+                .btn {
+                    background-color: $color3;
+                    color: $color5;
+
+                    &:hover {
+                        background-color: $color4;
+                    }
+                }
+
+                @media only screen and (max-width: 768px) {
+                    max-width: 100%;
+                    padding: 0 8px;
+                }
+            }
         }
     }
 
     .areaLateral {
         background-color: $color2;
-        min-height: 400px;
         position: relative;
+
+        section {
+                h2 {
+                    font-size: 1.7em;
+                }
+
+                .subSkills {
+                    max-width: 83%;
+                    margin: auto;
+                    text-align: left;
+                    padding: 15px 0;
+
+                    h3 {
+                        font-size: 1.3em;
+                        padding: 10px 0;
+                    }
+
+                    .boxSkills {
+                        background-color: $color4;
+                        padding: 4px 7px;
+                        margin: 0 7px 7px 0;
+                        display: inline-block;
+                        font-size: .9em;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 768px) {
+                    max-width: 100%;
+                    padding: 0 15px;
+                }
+                }
+        }
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section id="Home" class="w-100 h-100 row g-0">
+    <section id="Home" class="w-100 row g-0">
         <div class="col-lg-8 col-12 areaPrincipal">
             <div class="PrincConteudo w-100 h-100 d-flex align-items-center justify-content-center">
                 <section>
@@ -57,6 +57,7 @@ export default {
     #Home {
         background-color: $color1;
         color: $color5;
+        min-height: 100%;
     }
 
     .areaPrincipal {
@@ -138,20 +139,6 @@ export default {
                 &:hover {
                     background-color: $color3;
                 }
-            }
-        }
-
-        .scrollDown {
-                position: absolute;
-                bottom: 50px;
-                right: -25px;
-                text-decoration: none;
-                color: $color5;
-                display: flex;
-                align-items: center;
-
-            .arrow {
-                margin-left: 5px;
             }
         }
     }

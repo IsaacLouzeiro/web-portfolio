@@ -13,7 +13,7 @@
         <main class="w-100">
             <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
         
-            <AboutSection />
+            <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" />
         </main>
         <!-- // conteudo principal -->
     </section>
@@ -45,7 +45,7 @@ export default {
             profession: "Front-end Developer",
             textWebResume: "My Website Resume is on the link below",
             btnWebResume: "Web Resume",
-            scrollDown: "scroll down"
+            scrollDown: "scroll down",
             // EM PORTUGUÊS
             // welcome: "Bem vindo ao meu site.",
             // subtitleSectionHome: "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
@@ -57,6 +57,64 @@ export default {
             // textWebResume: "Meu Site-Currículo está no link a baixo",
             // btnWebResume: "Currículo Web",
             // scrollDown: "Rolar à baixo"
+
+            // AboutSection.vue
+
+            titleSectionAbout: "About me",
+            aboutText: [
+                'I started the Systems Development course at ETEC Professor Basilides de Godoy in 2019, and finished it in 2020. I did my final paper project in a PetShop system in Asp.Net MVC, worked with the front-end of the application using HTML, CSS, JavaScript and Bootstrap, and in the backend in Asp.Net MVC.', 
+                
+                'I joined Instituto Proa in 2021, in the ProProfissão 4.0 course on Java Web programming, and I feel that I have learned a lot in the communicative and technical work part, in addition to it, I have concluded my final paper work project (Demoday) in Economics system for low-income for young people, working mainly on the front-end system with HTML, CSS and JavaScript.', 
+                
+                'I am a very curious person, who likes to learn and expand my knowledge. Every day I try to improve my skills so that I can grow professionally.'
+                ],
+
+            moreDetails: "For more details",
+            titleSkills: "Skills",
+            hardSkill: "Hard skills",
+            softSkill: "Soft skills",
+            boxSkill: [
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
+                    name: 'HTML'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+                    name: 'CSS'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+                    name: 'SASS'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+                    name: 'JavaScript'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg',
+                    name: 'Vue'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg',
+                    name: 'Bootstrap'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-plain.svg',
+                    name: 'Adobe XD'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg',
+                    name: 'Photoshop'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',
+                    name: 'Git'
+                },
+                {
+                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
+                    name: 'GitHub'
+                }
+            ]
         }
     },
     components: {

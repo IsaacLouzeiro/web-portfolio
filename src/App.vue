@@ -1,6 +1,26 @@
 <template>
-  <router-view/>
+    <div class="bg-warning w-100 h-100" v-show="criado == 0">
+        {{ texto }}
+    </div>
+    <router-view/>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                texto: 'nao criado',
+                criado: 1
+            }
+        },
+        beforeMount() {
+            this.criado = 0
+        },
+        mounted() {
+            this.criado = 1
+        }
+    }
+</script>
 
 <style lang="scss">
 * { margin: 0; padding: 0; box-sizing: border-box; transition: all .1s; }
