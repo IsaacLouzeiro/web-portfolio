@@ -5,6 +5,10 @@
 <style lang="scss">
 * { margin: 0; padding: 0; box-sizing: border-box; transition: all .1s; }
 
+body {
+    overflow: hidden;
+}
+
 html, body, #app {
     height: 100%;
 }

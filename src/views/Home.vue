@@ -12,6 +12,8 @@
         <!-- conteudo principal -->
         <main class="w-100">
             <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
+        
+            <AboutSection />
         </main>
         <!-- // conteudo principal -->
     </section>
@@ -24,6 +26,7 @@
 import EmManutencao from '@/components/EmManutencao.vue'
 import NavBar from '@/components/NavBar.vue'
 import HomeSection from '@/components/HomeSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
 
 export default {
     name: 'Home',
@@ -59,7 +62,8 @@ export default {
     components: {
         EmManutencao,
         NavBar,
-        HomeSection
+        HomeSection,
+        AboutSection
     },
     created() {
         var windowWidth = window.innerWidth;
@@ -88,9 +92,29 @@ export default {
 
     main {
         margin-left: 70px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $color2;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color3;
+            border-radius: 20px;
+            border: 2px solid $color2;
+        }
 
         @media only screen and (max-width: 768px) {
             margin-left: 65px;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
         }
     }
 

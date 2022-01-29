@@ -10,7 +10,7 @@
             </ul>
         </div>
 
-        <ul class="nav flex-column list-group" id="list-example">
+        <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link" href="#Home"><font-awesome-icon :icon="['fas', 'home']" /></a>
             </li>
