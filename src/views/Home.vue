@@ -13,7 +13,7 @@
         <main class="w-100">
             <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
         
-            <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" />
+            <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
         </main>
         <!-- // conteudo principal -->
     </section>
@@ -59,7 +59,6 @@ export default {
             // scrollDown: "Rolar à baixo"
 
             // AboutSection.vue
-
             titleSectionAbout: "About me",
             aboutText: [
                 'I started the Systems Development course at ETEC Professor Basilides de Godoy in 2019, and finished it in 2020. I did my final paper project in a PetShop system in Asp.Net MVC, worked with the front-end of the application using HTML, CSS, JavaScript and Bootstrap, and in the backend in Asp.Net MVC.', 
@@ -114,7 +113,23 @@ export default {
                     linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
                     name: 'GitHub'
                 }
-            ]
+            ],
+            boxSoftSkill: ['Self-taught', 'Teamwork', 'Adaptability'],
+
+            // EM PORTUGUÊS
+            // titleSectionAbout: "Sobre mim",
+            // aboutText: [
+            //     'Comecei o curso de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
+                
+            //     'Entrei no Instituto Proa em 2021, no curso ProProfissão 4.0 de programação Java Web, e sinto que aprendi bastante na parte comunicativa e técnica de trabalho, além de concluir com o TCC (Demoday) de um sistema de Economia para jovens de baixa renda, trabalhando principalmente no front-end do sistema com HTML, CSS e JavaScript.', 
+                
+            //     'Sou uma pessoa bastante curiosa, que gosta de aprender e expandir meus conhecimentos. A cada dia tento melhorar minhas habilidades para que eu possa crescer profissionalmente.'
+            // ],
+            // moreDetails: "Para mais informações",
+            // titleSkills: "Habilidades",
+            // hardSkill: "Habilidades técnicas",
+            // softSkill: "Habilidades comportamentais",
+            // boxSoftSkill: ['Autodidata', 'Trabalho em equipe', 'Adaptável']
         }
     },
     components: {

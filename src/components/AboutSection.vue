@@ -15,8 +15,8 @@
         </div>
 
         <div class="col-lg-4 col-12 areaLateral d-flex align-items-center justify-content-center">
-            <section class="w-100">
-                <h2 class="my-4">{{ titleSkills }}</h2>
+            <section class="w-100 py-4">
+                <h2 class="mb-4">{{ titleSkills }}</h2>
 
                 <div class="subSkills">
                     <h3>{{ hardSkill }}</h3>
@@ -26,6 +26,7 @@
 
                 <div class="subSkills">
                     <h3>{{ softSkill }}</h3>
+                    <span class="boxSoftSkill my-1 d-block" v-for="item in boxSoftSkill" :key="item.boxSoftSkill"><div class="circleSkill"></div> {{ item }}</span>
                 </div>
             </section>
         </div>
@@ -44,7 +45,8 @@ export default {
         titleSkills: String,
         hardSkill: String,
         softSkill: String,
-        boxSkill: Array
+        boxSkill: Array,
+        boxSoftSkill: Array
     }
 }
 </script>
@@ -131,6 +133,16 @@ export default {
                         img {
                             width: 20px;
                             height: 20px;
+                        }
+                    }
+
+                    .boxSoftSkill {
+                        .circleSkill {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 10px;
+                            background-color: $color4;
+                            display: inline-block;
                         }
                     }
 
