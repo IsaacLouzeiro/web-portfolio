@@ -16,7 +16,7 @@
 
         <div class="col-lg-4 col-12 areaLateral d-flex align-items-center justify-content-center">
             <section class="w-100 py-4">
-                <h2 class="mb-4">{{ titleSkills }}</h2>
+                <h2 class="mb-3">{{ titleSkills }}</h2>
 
                 <div class="subSkills">
                     <h3>{{ hardSkill }}</h3>
@@ -155,6 +155,10 @@ export default {
                 @media only screen and (max-width: 768px) {
                     max-width: 100%;
                     padding: 0 15px;
+
+                    h3 {
+                        padding-top: 30px;
+                    }
                 }
 
                 @media only screen and (max-width: 375px) {
