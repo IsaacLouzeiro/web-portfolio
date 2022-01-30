@@ -74,43 +74,43 @@ export default {
             softSkill: "Soft skills",
             boxSkill: [
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
+                    linkImg: require('../assets/img/logo-html5.webp'),
                     name: 'HTML'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+                    linkImg: require('../assets/img/logo-css3.webp'),
                     name: 'CSS'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+                    linkImg: require('../assets/img/logo-sass.webp'),
                     name: 'SASS'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+                    linkImg: require('../assets/img/logo-javascript.webp'),
                     name: 'JavaScript'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg',
+                    linkImg: require('../assets/img/logo-vue.webp'),
                     name: 'Vue'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg',
+                    linkImg: require('../assets/img/logo-bootstrap.webp'),
                     name: 'Bootstrap'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-plain.svg',
+                    linkImg: require('../assets/img/logo-xd.webp'),
                     name: 'Adobe XD'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-plain.svg',
+                    linkImg: require('../assets/img/logo-photoshop.webp'),
                     name: 'Photoshop'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',
+                    linkImg: require('../assets/img/logo-git.webp'),
                     name: 'Git'
                 },
                 {
-                    linkImg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
+                    linkImg: require('../assets/img/logo-github.webp'),
                     name: 'GitHub'
                 }
             ],
