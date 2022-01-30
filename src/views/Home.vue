@@ -1,24 +1,37 @@
 <template>
-  <div class="home">
-    <div v-show="this.manut == 1" class="manutencao">
-        <EmManutencao />
+    <div class="home">
+        <!-- cursor do mouse -->
+        <custom-cursor
+            :targets="['img', 'a', 'button', 'your-hover-class']"
+            :circleColor="'#FF7A4F'"
+            :circleColorHover="'#FF7A4F'"
+            :dotColor="'#fff'"
+            :dotColorHover="'lightgray'"
+            :hoverSize="1.8"
+            class="custom-cursor"
+        ></custom-cursor>
+        <!-- // cursor do mouse -->
+
+        <!-- site em manutenção -->
+        <div v-show="this.manut == 1" class="manutencao">
+            <EmManutencao />
+        </div>
+        <!-- // site em manutenção -->
+
+        <!-- site funcional -->
+        <section v-show="this.manut == 0" class="principal d-flex">
+            <NavBar /><!-- // menu navegação -->
+
+            <!-- conteudo principal -->
+            <main class="w-100">
+                <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
+            
+                <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
+            </main>
+            <!-- // conteudo principal -->
+        </section>
+        <!-- // site funcional -->
     </div>
-
-    <!-- site funcional -->
-    <section v-show="this.manut == 0" class="principal d-flex">
-        <!-- menu navegação -->
-        <NavBar />
-
-        <!-- conteudo principal -->
-        <main class="w-100">
-            <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
-        
-            <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
-        </main>
-        <!-- // conteudo principal -->
-    </section>
-    <!-- // site funcional -->
-  </div>
 </template>
 
 <script>
@@ -27,6 +40,7 @@ import EmManutencao from '@/components/EmManutencao.vue'
 import NavBar from '@/components/NavBar.vue'
 import HomeSection from '@/components/HomeSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
+import CustomCursor from '@/components/CustomCursor.vue';
 
 export default {
     name: 'Home',
@@ -134,6 +148,7 @@ export default {
     },
     components: {
         EmManutencao,
+        CustomCursor,
         NavBar,
         HomeSection,
         AboutSection
@@ -149,6 +164,11 @@ export default {
 
 <style lang="scss" scoped>
     @import '../assets/scss/colors.scss';
+
+    .custom-cursor {
+        position: absolute;
+        z-index: 99999;
+    }
 
     .home, .principal, body {
         height: 100%;
