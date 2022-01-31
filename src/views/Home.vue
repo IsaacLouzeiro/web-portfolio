@@ -28,7 +28,7 @@
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
             
-                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" />
+                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" />
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -152,7 +152,8 @@ export default {
 
             titleSectionWork: "My Work",
             btnFreela: "Job Freelance",
-            btnPersonal: "Personal Projects"
+            btnPersonal: "Personal Projects",
+            seeMore: "See More"
         }
     },
     components: {

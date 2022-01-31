@@ -30,6 +30,8 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <a href="https://github.com/IsaacLouzeiro" class="btn btn-github my-3" target="_blank"><font-awesome-icon :icon="['fab', 'github-alt']" class="github-icon" /> {{ seeMore }}</a>
                 </section>
             </div>
         </div>
@@ -43,7 +45,8 @@ export default {
     props: {
         titleSection: String,
         btnFreela: String,
-        btnPersonal: String
+        btnPersonal: String,
+        seeMore: String
     }
 }
 </script>
@@ -58,7 +61,7 @@ export default {
     }
 
     .areaPrincipal {
-        min-height: 250px;
+        min-height: 300px;
         background-image: url(~@/assets/img/bg-work.webp);
         background-position: top center;
         background-size: cover;
@@ -98,6 +101,12 @@ export default {
                     &:hover {
                         background-color: $color4;
                     }
+
+                    @media only screen and (max-width: 375px) {
+                        margin: auto 3px;
+                        padding: 5px 7px;
+                        font-size: .9em;
+                    }
                 }
 
 
@@ -136,6 +145,26 @@ export default {
                                 color: $color5;
                             }
                         }
+                    }
+
+                    @media only screen and (max-width: 375px) {
+                        font-size: .9em;
+                    }
+                }
+
+                .btn-github {
+                    width: 140px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-content: center;
+                    font-size: 1.1em;
+                    margin: auto;
+                    .github-icon {
+                        font-size: 1.5em;
+                    }
+
+                    @media only screen and (max-width: 375px) {
+                        font-size: 1em;
                     }
                 }
 
