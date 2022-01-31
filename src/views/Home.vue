@@ -28,7 +28,7 @@
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
             
-                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" />
+                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" :projPersonal="projPersonal" />
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -166,6 +166,24 @@ export default {
                     id: 2,
                     alt: "Imagem Leandro Louzeiro Portfolio",
                     nome: "Leandro Louzeiro Portfolio",
+                    img: require('../assets/img/leandroLouzeiro.gif'),
+
+                }
+            ],
+
+
+            projPersonal: [
+                {
+                    id: 1.1,
+                    alt: "Imagem Alivisual 2",
+                    nome: "Alivisual 2",
+                    img: require('../assets/img/alivisual.gif'),
+
+                },
+                {
+                    id: 2.1,
+                    alt: "Imagem Leandro Louzeiro Portfolio 2",
+                    nome: "Leandro Louzeiro Portfolio 2",
                     img: require('../assets/img/leandroLouzeiro.gif'),
 
                 }

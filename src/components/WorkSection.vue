@@ -9,12 +9,32 @@
 
                     <div class="mt-3 mb-4">
                         <a href="#" @click="projFreelancer" id="projFreelancer" class="btn my-1 active">{{ btnFreela }}</a>
-                        <a href="#" @click="projPersonal" id="projPersonal" class="btn my-1">{{ btnPersonal }}</a>
+                        <a href="#" @click="projPessoal" id="projPersonal" class="btn my-1">{{ btnPersonal }}</a>
                     </div>
 
 
                     <ul class="box-projetos">
-                        <li v-for="item in projFreela" :key="item.projFreela">
+                        <li v-for="item in projFreela" :key="item.projFreela" v-show="this.freelancer == 'open'">
+                            <div @click="arrayFreela(item.id, 'boxOpen')">
+                                <div class="bg-proj">
+                                    <img :src="item.img" :alt="item.alt">
+                                </div>
+                                <div class="bottom-proj">
+                                    <span>{{ item.nome }}</span>
+                                </div>
+                            </div>
+
+                            <div :id="item.id" class="another-box">
+                                <section>
+                                    <div class="box-header">
+                                        <span class="box-title">{{ item.nome }}</span>
+                                        <span @click="arrayFreela(item.id, 'boxClose')" class="btn-close"></span>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+
+                        <li v-for="item in projPersonal" :key="item.projPersonal" v-show="this.pessoal == 'open'">
                             <div @click="arrayFreela(item.id, 'boxOpen')">
                                 <div class="bg-proj">
                                     <img :src="item.img" :alt="item.alt">
@@ -64,22 +84,35 @@
 <script>
 export default {
     name: 'WorkSection',
+    data() {
+        return {
+            freelancer: 'open',
+            pessoal: 'closed'
+        }
+    },
     props: {
         titleSection: String,
         btnFreela: String,
         btnPersonal: String,
         seeMore: String,
-        projFreela: Array
+        projFreela: Array,
+        projPersonal: Array
     },
     methods: {
         projFreelancer() {
             document.getElementById('projPersonal').classList.remove('active')
             document.getElementById('projFreelancer').classList.add('active')
+
+            this.freelancer = "open"
+            this.pessoal = "closed"
         },
 
-        projPersonal() {
+        projPessoal() {
             document.getElementById('projFreelancer').classList.remove('active')
             document.getElementById('projPersonal').classList.add('active')
+        
+            this.freelancer = "closed"
+            this.pessoal = "open"
         },
 
         arrayFreela(id, who) {
