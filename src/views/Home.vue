@@ -188,7 +188,9 @@ export default {
     },
     mounted() {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            document.getElementById('mainContent').style.overflow = "hidden"
+            document.getElementById('mainContent').classList.add('scrollbar')
+        }else {
+            document.getElementById('mainContent').classList.remove('scrollbar')
         }
     }
 }
@@ -237,9 +239,9 @@ export default {
         @media only screen and (max-width: 768px) {
             margin-left: 65px;
 
-            // &::-webkit-scrollbar {
-            //     width: 0px;
-            // }
+            &.scrollbar::-webkit-scrollbar {
+                width: 0px;
+            }
         }
     }
 
