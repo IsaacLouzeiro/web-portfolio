@@ -28,7 +28,7 @@
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
             
-                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" />
+                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" />
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -153,7 +153,23 @@ export default {
             titleSectionWork: "My Work",
             btnFreela: "Job Freelance",
             btnPersonal: "Personal Projects",
-            seeMore: "See More"
+            seeMore: "See More",
+            projFreela: [
+                {
+                    id: 1,
+                    alt: "Imagem Alivisual",
+                    nome: "Alivisual",
+                    img: require('../assets/img/alivisual.gif'),
+
+                },
+                {
+                    id: 2,
+                    alt: "Imagem Leandro Louzeiro Portfolio",
+                    nome: "Leandro Louzeiro Portfolio",
+                    img: require('../assets/img/leandroLouzeiro.gif'),
+
+                }
+            ]
         }
     },
     components: {
@@ -178,7 +194,7 @@ export default {
 
     .custom-cursor {
         position: absolute;
-        z-index: 99999;
+        z-index: 100000000000000;
     }
 
     .home, .principal, body {
