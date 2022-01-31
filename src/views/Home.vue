@@ -23,7 +23,7 @@
             <NavBar /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
-            <main class="w-100">
+            <main class="w-100" id="mainContent">
                 <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
@@ -185,6 +185,11 @@ export default {
         if(windowWidth < 768) {
             this.scrollDown = "swipe up"
         }
+    },
+    mounted() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            document.getElementById('mainContent').style.overflow = "hidden"
+        }
     }
 }
 </script>
@@ -232,9 +237,9 @@ export default {
         @media only screen and (max-width: 768px) {
             margin-left: 65px;
 
-            &::-webkit-scrollbar {
-                width: 0px;
-            }
+            // &::-webkit-scrollbar {
+            //     width: 0px;
+            // }
         }
     }
 

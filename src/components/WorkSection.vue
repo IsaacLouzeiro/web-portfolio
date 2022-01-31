@@ -117,16 +117,24 @@ export default {
         position: relative;
 
         .areaCentral {
+            position: absolute;
+            top: 0;
+            bottom: 0;
             background-color: rgba($color1, 0.83);
         }
 
         .areaLateral {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
             background-color: rgba($color1, 0.83);
             border-left: 5px dashed $color2;
         }
 
         .PrincConteudo {
-            position: absolute;
+            // position: absolute;
+            position: relative;
 
             h2 {
                 color: $color5;
@@ -291,15 +299,6 @@ export default {
                 @media only screen and (max-width: 375px) {
                     font-size: 1em;
                 }
-            }
-
-
-            @media only screen and (max-width: 768px) {
-                
-            }
-
-            @media only screen and (max-width: 375px) {
-                
             }
         }
     }
