@@ -27,6 +27,8 @@
                 <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
+            
+                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" />
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -40,6 +42,7 @@ import EmManutencao from '@/components/EmManutencao.vue'
 import NavBar from '@/components/NavBar.vue'
 import HomeSection from '@/components/HomeSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
+import WorkSection from '@/components/WorkSection.vue';
 import CustomCursor from '@/components/CustomCursor.vue';
 
 export default {
@@ -144,6 +147,12 @@ export default {
             // hardSkill: "Habilidades técnicas",
             // softSkill: "Habilidades comportamentais",
             // boxSoftSkill: ['Autodidata', 'Trabalho em equipe', 'Adaptável']
+
+            // WorkSection.vue
+
+            titleSectionWork: "My Work",
+            btnFreela: "Job Freelance",
+            btnPersonal: "Personal Projects"
         }
     },
     components: {
@@ -151,7 +160,8 @@ export default {
         CustomCursor,
         NavBar,
         HomeSection,
-        AboutSection
+        AboutSection,
+        WorkSection
     },
     created() {
         var windowWidth = window.innerWidth;
