@@ -170,7 +170,7 @@ export default {
                     img: require('../assets/img/leandroLouzeiro.gif'),
                     description: 'Photograpy portfolio developed for the photographer Leandro Louzeiro.',
                     link: 'https://leandrolouzeiro.com.br/',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ Vue Js ]'
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
 
                 }
             ],
@@ -182,7 +182,34 @@ export default {
                     img: require('../assets/img/resumeWebsite.gif'),
                     description: 'Web resume, a relaxed way of show my professional side.',
                     link: 'https://isaac-resume.firebaseapp.com/',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ Vue Js ]'
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
+                },
+                {
+                    id: 3.1,
+                    alt: "Image Movie database",
+                    nome: "Movie database",
+                    img: require('../assets/img/movieDb.gif'),
+                    description: 'Website of query movies and series, from an API. Created to practice my knowledge in Vue.Js.',
+                    link: 'https://vue3-movie-db.web.app/',
+                    technologies: '[ HTML5 ] [ SASS ] [ Vue Js ]'
+                },
+                {
+                    id: 4.1,
+                    alt: "Image My Portfolio 1.0",
+                    nome: "My Portfolio 1.0",
+                    img: require('../assets/img/portfolio1.0.gif'),
+                    description: 'My website portfolio, for the purpose of promote my work as a Front-end Developer.',
+                    link: 'https://isaaclouzeiro.github.io/portfolio/',
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ]'
+                },
+                {
+                    id: 5.1,
+                    alt: "Image Instagram Basic Display API",
+                    nome: "Instagram Basic Display API",
+                    img: require('../assets/img/apiinstagram.jpeg'),
+                    description: 'The website was made with the intention of using the Instagram Basic Display API from Facebook Developer for study purposes.',
+                    link: 'https://isaaclouzeiro.github.io/apiinstagram/',
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JQuery ]'
                 }
             ],
             linkWebsite: 'Visit website',

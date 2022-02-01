@@ -248,6 +248,8 @@ export default {
 
                         img {
                             width: 100%;
+                            max-width: 300px;
+                            max-height: 169px;
                         }
                     }
 
@@ -311,6 +313,8 @@ export default {
 
                                 img {
                                     border: 3px solid $color4;
+                                    max-width: 300px;
+                                    max-height: 169px;
                                 }
 
                                 h4 {
