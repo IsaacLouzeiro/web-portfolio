@@ -148,10 +148,10 @@ export default {
 
         arrayFreela(id, who) {
             if(who === "boxOpen") {
-                document.getElementById(id).setAttribute('style', 'z-index: 10000000 !important; padding-left: 0 !important');
+                document.getElementById(id).setAttribute('style', 'z-index: 10000000 !important; padding-top: 0 !important');
                 // alert(who)
             }else {
-                document.getElementById(id).setAttribute('style', 'z-index: -100000000 !important; padding-left: 1000px !important');
+                document.getElementById(id).setAttribute('style', 'z-index: -100000000 !important; padding-top: 500px !important');
                 // alert(who)
             }
 
@@ -277,7 +277,8 @@ export default {
                         align-items: center;
                         background-color: rgba($color2, .2);
                         transition: z-index .3s, padding .7s;
-                        padding-left: 1000px;
+                        padding-top: 500px;
+                        overflow: hidden;
 
                         section {
                             background-color: $color2;
