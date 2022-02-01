@@ -149,7 +149,6 @@ export default {
             // boxSoftSkill: ['Autodidata', 'Trabalho em equipe', 'Adaptável']
 
             // WorkSection.vue
-
             titleSectionWork: "My Work",
             btnFreela: "Job Freelance",
             btnPersonal: "Personal Projects",
@@ -188,7 +187,16 @@ export default {
             ],
             linkWebsite: 'Visit website',
             about: 'About',
-            technology: 'Technologies'
+            technology: 'Technologies',
+
+            // EM PORTUGUÊS
+            // titleSectionWork: "Meus projetos",
+            // btnFreela: "Freelances",
+            // btnPersonal: "Projetos pessoais",
+            // seeMore: "Veja Mais",
+            // linkWebsite: 'Visitar site',
+            // about: 'Sobre',
+            // technology: 'Tecnologias',
         }
     },
     components: {
