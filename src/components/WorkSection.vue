@@ -4,16 +4,16 @@
             <div class="areaCentral col-lg-8 col-12"></div>
             <div class="col-lg-4 col-12 d-none d-lg-block areaLateral"></div>
 
-            <div class="PrincConteudo h-100 container py-4">
-                    <h2 class="mt-3">{{ titleSection }}</h2>
+            <div class="PrincConteudo h-100 container py-4 d-flex flex-wrap">
+                    <h2 class="mt-3 w-100">{{ titleSection }}</h2>
 
-                    <div class="mt-3 mb-4">
+                    <div class="mt-3 mb-4 w-100 align-self-start">
                         <a href="#" @click="projFreelancer" id="projFreelancer" class="btn my-1 active">{{ btnFreela }}</a>
                         <a href="#" @click="projPessoal" id="projPersonal" class="btn my-1">{{ btnPersonal }}</a>
                     </div>
 
 
-                    <ul class="box-projetos">
+                    <ul class="box-projetos w-100">
                         <li v-for="item in projFreela" :key="item.projFreela" v-show="this.freelancer == 'open'">
                             <div @click="arrayFreela(item.id, 'boxOpen')">
                                 <div class="bg-proj">
@@ -29,6 +29,20 @@
                                     <div class="box-header">
                                         <span class="box-title">{{ item.nome }}</span>
                                         <span @click="arrayFreela(item.id, 'boxClose')" class="btn-close"></span>
+                                    </div>
+
+                                    <div class="box-main">
+                                        <img :src="item.img" :alt="item.alt">
+
+                                        <h4 class="mt-3">{{ about }}</h4>
+                                        <p>{{ item.description }}</p>
+
+                                        <h4 class="mt-3">{{ technology }}</h4>
+                                        <p>{{ item.technologies }}</p>
+                                    </div>
+
+                                    <div class="box-footer">
+                                        <a :href="item.link" class="btn btn-website my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fas', 'window-maximize']" class="window-maximize" /> {{ linkWebsite }}</a>
                                     </div>
                                 </section>
                             </div>
@@ -50,13 +64,27 @@
                                         <span class="box-title">{{ item.nome }}</span>
                                         <span @click="arrayFreela(item.id, 'boxClose')" class="btn-close"></span>
                                     </div>
+
+                                    <div class="box-main">
+                                        <img :src="item.img" :alt="item.alt">
+
+                                        <h4 class="mt-3">{{ about }}</h4>
+                                        <p>{{ item.description }}</p>
+
+                                        <h4 class="mt-3">{{ technology }}</h4>
+                                        <p>{{ item.technologies }}</p>
+                                    </div>
+
+                                    <div class="box-footer">
+                                        <a :href="item.link" class="btn btn-website my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fas', 'window-maximize']" class="window-maximize" /> {{ linkWebsite }}</a>
+                                    </div>
                                 </section>
                             </div>
                         </li>
                     </ul>
 
 
-                    <nav class="mb-3">
+                    <!-- <nav class="mb-3">
                         <ul class="pagination d-flex align-items-center justify-content-center">
                             <li class="page-item">
                                 <a class="page-link link-arrow" href="#" aria-label="Previous">
@@ -72,9 +100,9 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
 
-                    <a href="https://github.com/IsaacLouzeiro" class="btn btn-github my-3" target="_blank"><font-awesome-icon :icon="['fab', 'github-alt']" class="github-icon" /> {{ seeMore }}</a>
+                    <a href="https://github.com/IsaacLouzeiro" class="btn btn-github my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fab', 'github-alt']" class="github-icon" /> {{ seeMore }}</a>
             </div>
         </div>
 
@@ -96,7 +124,10 @@ export default {
         btnPersonal: String,
         seeMore: String,
         projFreela: Array,
-        projPersonal: Array
+        projPersonal: Array,
+        linkWebsite: String,
+        about: String,
+        technology: String
     },
     methods: {
         projFreelancer() {
@@ -250,23 +281,53 @@ export default {
                             background-color: $color2;
                             width: 100%;
                             max-width: 500px;
-                            height: 500px;
+                            // height: 500px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
 
                             .box-header {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
                                 padding: 15px;
+                                margin-bottom: 10px;
                                 border-bottom: 1px solid $color3;
 
                                 .box-title {
-                                    font-size: 1.2em;
+                                    font-size: 1.4em;
+                                    font-weight: bold;
                                 }
 
                                 .btn-close {
                                     background-color: $color4;
                                     font-size: 1em;
                                     padding: 5px 10px;
+                                }
+                            }
+
+                            .box-main {
+                                padding: 0 5px;
+
+                                img {
+                                    border: 3px solid $color4;
+                                }
+
+                                h4 {
+                                    font-size: 1.4em;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .box-footer {
+                                border-top: 1px solid $color3;
+
+                                .btn-website {
+                                    background-color: $color4;
+
+                                    &:hover {
+                                        background-color: $color3;
+                                    }
                                 }
                             }
                         }

@@ -28,7 +28,7 @@
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
             
-                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" :projPersonal="projPersonal" />
+                <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" :projPersonal="projPersonal" :linkWebsite="linkWebsite" :about="about" :technology="technology" />
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -160,34 +160,35 @@ export default {
                     alt: "Imagem Alivisual",
                     nome: "Alivisual",
                     img: require('../assets/img/alivisual.gif'),
-
+                    description: 'The website was made for "Alivisual", a producer of audiovisual & photography from São Paulo.',
+                    link: 'https://www.alivisual.com.br/',
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ PHP ]'
                 },
                 {
                     id: 2,
                     alt: "Imagem Leandro Louzeiro Portfolio",
                     nome: "Leandro Louzeiro Portfolio",
                     img: require('../assets/img/leandroLouzeiro.gif'),
+                    description: 'Photograpy portfolio developed for the photographer Leandro Louzeiro.',
+                    link: 'https://leandrolouzeiro.com.br/',
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ Vue Js ]'
 
                 }
             ],
-
-
             projPersonal: [
                 {
-                    id: 1.1,
-                    alt: "Imagem Alivisual 2",
-                    nome: "Alivisual 2",
-                    img: require('../assets/img/alivisual.gif'),
-
-                },
-                {
                     id: 2.1,
-                    alt: "Imagem Leandro Louzeiro Portfolio 2",
-                    nome: "Leandro Louzeiro Portfolio 2",
-                    img: require('../assets/img/leandroLouzeiro.gif'),
-
+                    alt: "Image website resume",
+                    nome: "My website resume",
+                    img: require('../assets/img/resumeWebsite.gif'),
+                    description: 'Web resume, a relaxed way of show my professional side.',
+                    link: 'https://isaac-resume.firebaseapp.com/',
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ Vue Js ]'
                 }
-            ]
+            ],
+            linkWebsite: 'Visit website',
+            about: 'About',
+            technology: 'Technologies'
         }
     },
     components: {
