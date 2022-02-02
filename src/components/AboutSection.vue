@@ -37,7 +37,6 @@
 export default {
     name: 'AboutSection',
     props: {
-        scrollDown: String,
         titleSection: String,
         aboutText: Array,
         moreDetails: String,
@@ -53,7 +52,6 @@ export default {
 
 <style lang="scss" scoped>
     @import '../assets/scss/colors.scss';
-    @import '../assets/scss/arrowAnimation.scss';
 
     #About {
         background-color: $color1;

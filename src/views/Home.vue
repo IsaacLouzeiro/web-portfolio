@@ -20,7 +20,7 @@
 
         <!-- site funcional -->
         <section v-show="this.manut == 0" class="principal d-flex">
-            <NavBar /><!-- // menu navegação -->
+            <NavBar :linkedin="linkedin" :github="github" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
             <main class="w-100" id="mainContent">
@@ -29,6 +29,8 @@
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
             
                 <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" :projPersonal="projPersonal" :linkWebsite="linkWebsite" :about="about" :technology="technology" />
+            
+                <ContactSection :titleSection="titleSectionContact" :subtitleSection="subtitleSectionContact" :titleMaps="titleMaps" :email="email" :linkedinLink="linkedinLink" :linkedin="linkedin" :localization="localization" :linkMap="linkMap" />
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -39,11 +41,12 @@
 <script>
 // @ is an alias to /src
 import EmManutencao from '@/components/EmManutencao.vue'
+import CustomCursor from '@/components/CustomCursor.vue';
 import NavBar from '@/components/NavBar.vue'
 import HomeSection from '@/components/HomeSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import WorkSection from '@/components/WorkSection.vue';
-import CustomCursor from '@/components/CustomCursor.vue';
+import ContactSection from '../components/ContactSection.vue';
 
 export default {
     name: 'Home',
@@ -51,6 +54,10 @@ export default {
         return {
             // manutencao
             manut: 0,
+
+            // linkedin e github link
+            linkedin: "https://www.linkedin.com/in/isaac-louzeiro/",
+            github: "https://github.com/IsaacLouzeiro",
 
             // HomeSection.vue
             welcome: "Welcome to my website.",
@@ -224,16 +231,26 @@ export default {
             // linkWebsite: 'Visitar site',
             // about: 'Sobre',
             // technology: 'Tecnologias',
+
+            // ContactSection.vue
+            titleSectionContact: "Contact",
+            subtitleSectionContact: "If you are interested in my work or need additional information please, reach me out.",
+            titleMaps: "Localization",
+            email: "isaacelias1110@gmail.com",
+            linkedinLink: "/in/isaac-louzeiro",
+            localization: "São Paulo, SP | Brazil",
+            linkMap: require('../assets/img/maps.webp')
         }
     },
     components: {
-        EmManutencao,
-        CustomCursor,
-        NavBar,
-        HomeSection,
-        AboutSection,
-        WorkSection
-    },
+    EmManutencao,
+    CustomCursor,
+    NavBar,
+    HomeSection,
+    AboutSection,
+    WorkSection,
+    ContactSection
+},
     created() {
         var windowWidth = window.innerWidth;
         if(windowWidth < 768) {

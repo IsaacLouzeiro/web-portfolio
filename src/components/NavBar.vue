@@ -26,15 +26,19 @@
         </ul>
 
         <div class="social-network d-flex flex-column justify-content-between">
-            <a href="https://github.com/IsaacLouzeiro" target="_blank"><font-awesome-icon :icon="['fab', 'github-square']" /></a>
-            <a href="https://www.linkedin.com/in/isaac-louzeiro/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+            <a :href="github" target="_blank"><font-awesome-icon :icon="['fab', 'github-square']" /></a>
+            <a :href="linkedin" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
         </div>
     </nav>
 </template>
 
 <script>
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    props: {
+        linkedin: String,
+        github: String
+    }
 }
 </script>
 
