@@ -195,12 +195,12 @@ export default {
                 },
                 {
                     id: 3.1,
-                    alt: "Image Movie database",
-                    nome: "Movie database",
-                    img: require('../assets/img/movieDb.gif'),
-                    description: 'Website of query movies and series, from an API. Created to practice my knowledge in Vue.Js.',
-                    link: 'https://vue3-movie-db.web.app/',
-                    technologies: '[ HTML5 ] [ SASS ] [ Vue Js ]'
+                    alt: "Image Final Paper System",
+                    nome: "Final Paper System Petshop",
+                    img: require('../assets/img/petshopEnterprize.gif'),
+                    description: 'Pet Shop web system, for a fictitious enterprise, focused on sale of products for pets, and the register of pets to the grooming service, in addition to the institutional website.',
+                    link: 'https://github.com/IsaacLouzeiro/petshop-tcc',
+                    technologies: '[ HTML5 ] [ CSS3 ] [ Bootstrap ] [ JavaScript ] [ AspNet ] [ MySQL ]'
                 },
                 {
                     id: 4.1,
