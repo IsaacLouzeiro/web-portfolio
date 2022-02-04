@@ -128,8 +128,8 @@ export default {
                     name: 'Adobe XD'
                 },
                 {
-                    linkImg: require('../assets/img/logo-photoshop.webp'),
-                    name: 'Photoshop'
+                    linkImg: require('../assets/img/logo-mysql.webp'),
+                    name: 'MySQL'
                 },
                 {
                     linkImg: require('../assets/img/logo-git.webp'),
