@@ -24,7 +24,7 @@
 
             <!-- conteudo principal -->
             <main class="w-100" id="mainContent">
-                <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :scrollDown="scrollDown" />
+                <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :linkLogo="linkLogoWhite" :scrollDown="scrollDown" />
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
             
@@ -69,6 +69,8 @@ export default {
             profession: "Front-end Developer",
             textWebResume: "My Website Resume is on the link below",
             btnWebResume: "Web Resume",
+            linkLogo: require('../assets/img/logo-isaac-louzeiro-tiny.png'),
+            linkLogoWhite: require('../assets/img/logo-isaac-louzeiro-tiny-white.png'),
             scrollDown: "scroll down",
             // EM PORTUGUÊS
             // welcome: "Bem vindo ao meu site.",
@@ -239,7 +241,7 @@ export default {
             email: "isaacelias1110@gmail.com",
             linkedinLink: "/in/isaac-louzeiro",
             localization: "São Paulo, SP | Brazil",
-            linkMap: require('../assets/img/maps.webp')
+            linkMap: require('../assets/img/maps.webp'),
         }
     },
     components: {

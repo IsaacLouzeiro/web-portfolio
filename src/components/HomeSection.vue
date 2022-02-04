@@ -16,10 +16,14 @@
         </div>
 
         <div class="col-lg-4 col-12 areaLateral d-flex align-items-center justify-content-center">
-            <section>
+            <section class="py-3">
                 <img src="../assets/img/img-isaac.jpeg" alt="My Image" class="imgIsaac">
                 <h2 class="mt-3 mb-2">{{ myName }}</h2>
-                <span class="mb-5">{{ profession }}</span><br>
+                <span >{{ profession }}</span><br>
+
+                <div class="py-3">
+                    <img :src="linkLogo" alt="My Logo" class="myLogo">
+                </div>
 
                 <span class="webResume">{{ textWebResume }}</span><br>
 
@@ -44,6 +48,7 @@ export default {
         profession: String,
         textWebResume: String,
         btnWebResume: String,
+        linkLogo: String,
         scrollDown: String
     }
 }
@@ -144,6 +149,26 @@ export default {
                 &.webResume {
                     font-size: 1.1em;
                 }
+            }
+
+            @keyframes loading {
+                0% {
+                    bottom: 0;
+                }
+                50% {
+                    bottom: 5px;
+                }
+                100% {
+                    bottom: 0;
+                }
+            }
+
+            .myLogo {
+                width: 100%;
+                max-width: 120px;
+                position: relative;
+                filter: drop-shadow(0 0 .8rem rgba($color3, .4));
+                animation: loading 1.7s linear infinite;
             }
 
             a.btn {
