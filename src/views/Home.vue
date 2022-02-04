@@ -236,12 +236,18 @@ export default {
 
             // ContactSection.vue
             titleSectionContact: "Contact",
-            subtitleSectionContact: "If you are interested in my work or need additional information please, reach me out.",
+            subtitleSectionContact: "If you are interested in my work or need additional information, please, reach me out.",
             titleMaps: "Localization",
             email: "isaacelias1110@gmail.com",
             linkedinLink: "/in/isaac-louzeiro",
             localization: "São Paulo, SP | Brazil",
             linkMap: require('../assets/img/maps.webp'),
+
+            // EM PORTUGUÊS
+            // titleSectionContact: "Contato",
+            // subtitleSectionContact: "Se você estiver interessado no meu trabalho ou precisar de informações adicionais, por favor, entre em contato.",
+            // titleMaps: "Localização",
+            // localization: "São Paulo, SP | Brasil",
         }
     },
     components: {
