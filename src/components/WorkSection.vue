@@ -8,8 +8,16 @@
                     <h2 class="mt-3 w-100">{{ titleSection }}</h2>
 
                     <div class="mt-3 mb-4 w-100 align-self-start">
-                        <a href="#" @click="projFreelancer" id="projFreelancer" class="btn my-1 active">{{ btnFreela }}</a>
-                        <a href="#" @click="projPessoal" id="projPersonal" class="btn my-1">{{ btnPersonal }}</a>
+                        <a href="#" @click="projFreelancer" id="projFreelancer" class="btn my-1 active">
+                            <font-awesome-icon v-if="this.freelancer == 'closed'" :icon="['far', 'dot-circle']"/> 
+                            <font-awesome-icon v-else :icon="['fas', 'dot-circle']"/> 
+                            {{ btnFreela }}
+                        </a>
+                        <a href="#" @click="projPessoal" id="projPersonal" class="btn my-1">
+                            <font-awesome-icon v-if="this.pessoal == 'closed'" :icon="['far', 'dot-circle']"/> 
+                            <font-awesome-icon v-else :icon="['fas', 'dot-circle']"/>
+                            {{ btnPersonal }}
+                        </a>
                     </div>
 
 
@@ -115,7 +123,7 @@ export default {
     data() {
         return {
             freelancer: 'open',
-            pessoal: 'closed'
+            pessoal: 'closed',
         }
     },
     props: {
