@@ -9,14 +9,36 @@
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(30) 1s 1 normal both,
-             blinkTextCursor 500ms steps(30) infinite normal;
+    animation: typewriter 4s steps(30) 1s 1 normal both,
+    blinkTextCursor 500ms steps(30) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 11.5em;}
+    from{width: 0;}
+    to{width: 11.5em;}
 }
+
+@media only screen and (max-width: 425px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 97%;}
+    }
+}
+
+@media only screen and (max-width: 397px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 100%;}
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 11.5em;}
+    }
+}
+
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
 }

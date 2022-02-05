@@ -224,7 +224,8 @@ export default {
             .btn {
                 background-color: $color3;
                 color: $color5;
-                margin: auto 7px;
+                padding: 5px 7px;
+                margin: auto 5px;
 
                 &.active {
                     background-color: $color4;
@@ -237,7 +238,7 @@ export default {
                 @media only screen and (max-width: 375px) {
                     margin: auto 3px;
                     padding: 5px 7px;
-                    font-size: .9em;
+                    font-size: .85em;
                 }
             }
 
