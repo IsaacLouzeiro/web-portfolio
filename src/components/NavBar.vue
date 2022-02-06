@@ -1,5 +1,5 @@
 <template>
-    <nav class="d-flex flex-column justify-content-between fixed-top">
+    <nav class="d-flex flex-column justify-content-between fixed-top" id="navbar">
         <div class="box-lang dropdown">
             <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" />
@@ -83,11 +83,6 @@ export default {
                         background-color: $color3
                     }
                 }
-
-                .active {
-                    background-color: $color5;
-                    color: $color2;
-                }
             }
         }
 
@@ -101,11 +96,16 @@ export default {
                     padding: 7px 10px;
                     border-radius: 4px;
                     color: $color1;
-
+                    
                     &:hover, &:active {
-                        background-color: $color5;
+                        // background-color: $color5;
                         color: $color2;
                     }
+                }
+
+                .active {
+                    background-color: $color5;
+                    color: $color2;
                 }
             }
         }

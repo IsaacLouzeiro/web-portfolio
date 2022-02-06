@@ -23,7 +23,7 @@
             <NavBar :linkedin="linkedin" :github="github" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
-            <main class="w-100" id="mainContent">
+            <main class="w-100" id="mainContent" data-bs-spy="scroll" data-bs-target="#navbar">
                 <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :linkLogo="linkLogoWhite" :scrollDown="scrollDown" />
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
@@ -306,6 +306,7 @@ export default {
         margin-left: 70px;
         overflow-y: auto;
         scroll-behavior: smooth;
+        position: relative;
 
         &::-webkit-scrollbar {
             width: 8px;
