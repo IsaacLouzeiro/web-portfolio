@@ -50,7 +50,8 @@
                                     </div>
 
                                     <div class="box-footer">
-                                        <a :href="item.link" class="btn btn-website my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fas', 'window-maximize']" class="window-maximize" /> {{ linkWebsite }}</a>
+                                        <a v-show="item.link != ''" :href="item.link" class="btn btn-website my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fas', 'window-maximize']" class="window-maximize" /> {{ linkWebsite }}</a>
+                                        <a v-show="item.repo != ''" :href="item.repo" class="btn btn-repo my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fab', 'github']" class="repoGithub" /></a>
                                     </div>
                                 </section>
                             </div>
@@ -84,7 +85,8 @@
                                     </div>
 
                                     <div class="box-footer">
-                                        <a :href="item.link" class="btn btn-website my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fas', 'window-maximize']" class="window-maximize" /> {{ linkWebsite }}</a>
+                                        <a v-show="item.link != ''" :href="item.link" class="btn btn-website my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fas', 'window-maximize']" class="window-maximize" /> {{ linkWebsite }}</a>
+                                        <a v-show="item.repo != ''" :href="item.repo" class="btn btn-repo my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fab', 'github']" class="repoGithub" /></a>
                                     </div>
                                 </section>
                             </div>
@@ -339,14 +341,25 @@ export default {
                             }
 
                             .box-footer {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 border-top: 1px solid $color3;
 
-                                .btn-website {
+                                .btn-website,
+                                .btn-repo {
                                     background-color: $color4;
+                                    font-size: 1.1em;
 
                                     &:hover {
                                         background-color: $color3;
                                     }
+                                }
+
+                                .btn-repo {
+                                    text-decoration: none;
+                                    color: $color5;
+                                    padding: 5px 15px;
                                 }
                             }
                         }

@@ -170,6 +170,7 @@ export default {
                     img: require('../assets/img/alivisual.gif'),
                     description: 'The website was made for "Alivisual", a producer of audiovisual & photography from São Paulo.',
                     link: 'https://www.alivisual.com.br/',
+                    repo: '',
                     technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ PHP ]'
                 },
                 {
@@ -179,6 +180,7 @@ export default {
                     img: require('../assets/img/leandroLouzeiro.gif'),
                     description: 'Photograpy portfolio developed for the photographer Leandro Louzeiro.',
                     link: 'https://leandrolouzeiro.com.br/',
+                    repo: 'https://github.com/IsaacLouzeiro/website-portfolio-fotografia2',
                     technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
 
                 }
@@ -191,6 +193,7 @@ export default {
                     img: require('../assets/img/resumeWebsite.gif'),
                     description: 'Web resume, a relaxed way of show my professional side.',
                     link: 'https://isaac-resume.firebaseapp.com/',
+                    repo: 'https://github.com/IsaacLouzeiro/resume',
                     technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
                 },
                 {
@@ -199,7 +202,8 @@ export default {
                     nome: "Final Paper System Petshop",
                     img: require('../assets/img/petshopEnterprize.gif'),
                     description: 'Pet Shop web system, for a fictitious enterprise, focused on sale of products for pets, and the register of pets to the grooming service, in addition to the institutional website. Final Paper project of the course of Systems Development at ETEC Professor Basilides de Godoy.',
-                    link: 'https://github.com/IsaacLouzeiro/petshop-tcc',
+                    link: '',
+                    repo: 'https://github.com/IsaacLouzeiro/petshop-tcc',
                     technologies: '[ HTML5 ] [ CSS3 ] [ Bootstrap ] [ JavaScript ] [ AspNet ] [ MySQL ]'
                 },
                 {
@@ -209,6 +213,7 @@ export default {
                     img: require('../assets/img/projetoTcm.gif'),
                     description: 'This website was created by me, With the purpose of completing the first semester final exam at ETEC for Systems development course, and also to enhance my experience in the field.',
                     link: 'https://isaaclouzeiro.github.io/Site-institucional/',
+                    repo: 'https://github.com/IsaacLouzeiro/Site-institucional',
                     technologies: '[ HTML5 ] [ CSS3 ] [ JavaScript ]'
                 },
                 {
@@ -218,6 +223,7 @@ export default {
                     img: require('../assets/img/apiinstagram.jpeg'),
                     description: 'The website was made with the intention of using the Instagram Basic Display API from Facebook Developer for study purposes.',
                     link: 'https://isaaclouzeiro.github.io/apiinstagram/',
+                    repo: 'https://github.com/IsaacLouzeiro/apiinstagram',
                     technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JQuery ]'
                 }
             ],
