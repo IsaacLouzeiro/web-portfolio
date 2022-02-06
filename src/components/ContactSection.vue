@@ -71,6 +71,7 @@ export default {
         background-position: top center;
         background-size: cover;
         min-height: 200px;
+        position: relative;
         .PrincConteudo {
             background-color: rgba($color1, 0.83);
 
