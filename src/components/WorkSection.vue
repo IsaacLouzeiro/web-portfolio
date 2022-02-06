@@ -43,7 +43,7 @@
                                         <img :src="item.img" :alt="item.alt">
 
                                         <h4 class="mt-3">{{ about }}</h4>
-                                        <p>{{ item.description }}</p>
+                                        <p class="Itemdesc">{{ item.description }}</p>
 
                                         <h4 class="mt-3">{{ technology }}</h4>
                                         <p>{{ item.technologies }}</p>
@@ -77,7 +77,7 @@
                                         <img :src="item.img" :alt="item.alt">
 
                                         <h4 class="mt-3">{{ about }}</h4>
-                                        <p>{{ item.description }}</p>
+                                        <p class="Itemdesc">{{ item.description }}</p>
 
                                         <h4 class="mt-3">{{ technology }}</h4>
                                         <p>{{ item.technologies }}</p>
@@ -224,7 +224,6 @@ export default {
             .btn {
                 background-color: $color3;
                 color: $color5;
-                padding: 5px 7px;
                 margin: auto 5px;
 
                 &.active {
@@ -235,9 +234,9 @@ export default {
                     background-color: $color4;
                 }
 
-                @media only screen and (max-width: 375px) {
-                    margin: auto 3px;
-                    padding: 5px 7px;
+                @media only screen and (max-width: 425px) {
+                    padding: 5px 6px;
+                    margin: auto 4px;
                     font-size: .85em;
                 }
             }
@@ -320,6 +319,12 @@ export default {
 
                             .box-main {
                                 padding: 0 5px;
+                                
+                                .Itemdesc {
+                                    text-align: left;
+                                    padding: 0 5px;
+                                    display: inline-block;
+                                }
 
                                 img {
                                     border: 3px solid $color4;

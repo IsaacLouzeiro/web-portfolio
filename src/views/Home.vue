@@ -198,18 +198,18 @@ export default {
                     alt: "Image Final Paper System",
                     nome: "Final Paper System Petshop",
                     img: require('../assets/img/petshopEnterprize.gif'),
-                    description: 'Pet Shop web system, for a fictitious enterprise, focused on sale of products for pets, and the register of pets to the grooming service, in addition to the institutional website.',
+                    description: 'Pet Shop web system, for a fictitious enterprise, focused on sale of products for pets, and the register of pets to the grooming service, in addition to the institutional website. Final Paper project of the course of Systems Development at ETEC Professor Basilides de Godoy.',
                     link: 'https://github.com/IsaacLouzeiro/petshop-tcc',
                     technologies: '[ HTML5 ] [ CSS3 ] [ Bootstrap ] [ JavaScript ] [ AspNet ] [ MySQL ]'
                 },
                 {
                     id: 4.1,
-                    alt: "Image My Portfolio 1.0",
-                    nome: "My Portfolio 1.0",
-                    img: require('../assets/img/portfolio1.0.gif'),
-                    description: 'My website portfolio, for the purpose of promote my work as a Front-end Developer.',
-                    link: 'https://isaaclouzeiro.github.io/portfolio/',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ]'
+                    alt: "Image Institutional Website",
+                    nome: "Institutional Website",
+                    img: require('../assets/img/projetoTcm.gif'),
+                    description: 'This website was created by me, With the purpose of completing the first semester final exam at ETEC for Systems development course, and also to enhance my experience in the field.',
+                    link: 'https://isaaclouzeiro.github.io/Site-institucional/',
+                    technologies: '[ HTML5 ] [ CSS3 ] [ JavaScript ]'
                 },
                 {
                     id: 5.1,
