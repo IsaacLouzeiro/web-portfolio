@@ -31,6 +31,10 @@
                 <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" :projPersonal="projPersonal" :linkWebsite="linkWebsite" :about="about" :technology="technology" />
             
                 <ContactSection :titleSection="titleSectionContact" :subtitleSection="subtitleSectionContact" :titleMaps="titleMaps" :email="email" :linkedinLink="linkedinLink" :linkedin="linkedin" :localization="localization" :linkMap="linkMap" />
+
+                <footer>
+                    <span>© 2022 | Isaac Louzeiro</span>
+                </footer>
             </main>
             <!-- // conteudo principal -->
         </section>
@@ -331,4 +335,10 @@ export default {
         }
     }
 
+    footer {
+        background-color: $color4;
+        text-align: right;
+        padding: 5px 10px;
+        color: $color2;
+    }
 </style>
