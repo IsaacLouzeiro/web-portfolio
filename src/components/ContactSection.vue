@@ -38,7 +38,12 @@
             </section>
             </div>
         </div>
+
     </section>
+
+    <footer>
+        <span>© 2022 | Isaac Louzeiro</span>
+    </footer>
 </template>
 
 <script>
@@ -197,5 +202,12 @@ export default {
             padding: 0 15px;
             }
         }
+    }
+
+    footer {
+        background-color: $color4;
+        text-align: right;
+        padding: 5px 10px;
+        color: $color2;
     }
 </style>
