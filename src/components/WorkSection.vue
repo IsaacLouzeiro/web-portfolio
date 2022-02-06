@@ -8,7 +8,7 @@
                     <h2 class="mt-3 w-100">{{ titleSection }}</h2>
 
                     <div class="mt-3 mb-4 w-100 align-self-start">
-                        <a href="#" @click="projFreelancer" id="projFreelancer" class="btn my-1 active">
+                        <a href="#" @click="projFreelancer" id="projFreelancer" class="btn my-1 ativo">
                             <font-awesome-icon v-if="this.freelancer == 'closed'" :icon="['far', 'dot-circle']"/> 
                             <font-awesome-icon v-else :icon="['fas', 'dot-circle']"/> 
                             {{ btnFreela }}
@@ -101,7 +101,7 @@
                                     &lsaquo;
                                 </a>
                             </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item ativo"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
@@ -141,16 +141,16 @@ export default {
     },
     methods: {
         projFreelancer() {
-            document.getElementById('projPersonal').classList.remove('active')
-            document.getElementById('projFreelancer').classList.add('active')
+            document.getElementById('projPersonal').classList.remove('ativo')
+            document.getElementById('projFreelancer').classList.add('ativo')
 
             this.freelancer = "open"
             this.pessoal = "closed"
         },
 
         projPessoal() {
-            document.getElementById('projFreelancer').classList.remove('active')
-            document.getElementById('projPersonal').classList.add('active')
+            document.getElementById('projFreelancer').classList.remove('ativo')
+            document.getElementById('projPersonal').classList.add('ativo')
         
             this.freelancer = "closed"
             this.pessoal = "open"
@@ -228,7 +228,7 @@ export default {
                 color: $color5;
                 margin: auto 5px;
 
-                &.active {
+                &.ativo {
                     background-color: $color4;
                 }
 
