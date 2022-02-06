@@ -272,6 +272,9 @@ export default {
                     .bottom-proj {
                         background-color: $color2;
                         text-align: left;
+                        display: flex;
+                        align-items: center;
+                        padding: 2px;
 
                         span {
                             font-size: 1em;
