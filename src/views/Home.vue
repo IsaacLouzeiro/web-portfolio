@@ -160,7 +160,7 @@ export default {
             // WorkSection.vue
             titleSectionWork: "My Work",
             btnFreela: "Job Freelance",
-            btnPersonal: "Personal Projects",
+            btnPersonal: "Relevant Projects",
             seeMore: "See More",
             projFreela: [
                 {
@@ -228,7 +228,7 @@ export default {
             // EM PORTUGUÊS
             // titleSectionWork: "Meus projetos",
             // btnFreela: "Freelances",
-            // btnPersonal: "Projetos pessoais",
+            // btnPersonal: "Projetos relevantes",
             // seeMore: "Veja Mais",
             // linkWebsite: 'Visitar site',
             // about: 'Sobre',
