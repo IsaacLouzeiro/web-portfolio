@@ -167,7 +167,7 @@ export default {
                 width: 100%;
                 max-width: 120px;
                 position: relative;
-                filter: drop-shadow(0 0 .8rem rgba($color3, .4));
+                filter: drop-shadow(0 0 .6rem rgba($color3, .4));
                 animation: loading 1.7s linear infinite;
             }
 
