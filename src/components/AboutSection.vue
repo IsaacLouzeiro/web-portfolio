@@ -9,7 +9,12 @@
 
                     <span class="mt-3 d-inline-block">{{ moreDetails }}</span><br>
 
-                    <a href="https://isaac-resume.firebaseapp.com/" target="_blank" class="btn mt-2 mb-4"><font-awesome-icon :icon="['fas', 'window-maximize']" /> {{ btnWebResume }}</a>
+                    <a href="https://isaac-resume.firebaseapp.com/" target="_blank" class="btn mt-2 ms-0"><font-awesome-icon :icon="['fas', 'window-maximize']" /> {{ btnWebResume }}</a>
+                    <br>
+                    <a :href="github" target="_blank" class="btn social ms-0"><font-awesome-icon :icon="['fab', 'github']" /></a>
+                    <a :href="linkedin" target="_blank" class="btn social"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+                    <a :href="codepen" target="_blank" class="btn social"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
+                    <a :href="youtube" target="_blank" class="btn social"><font-awesome-icon :icon="['fab', 'youtube']" /></a>
                 </section>
             </div>
         </div>
@@ -45,7 +50,11 @@ export default {
         hardSkill: String,
         softSkill: String,
         boxSkill: Array,
-        boxSoftSkill: Array
+        boxSoftSkill: Array,
+        github: String,
+        linkedin: String,
+        codepen: String,
+        youtube: String
     }
 }
 </script>
@@ -87,6 +96,12 @@ export default {
                 .btn {
                     background-color: $color3;
                     color: $color5;
+                    margin-left: 5px;
+                    margin-right: 5px;
+
+                    &.social {
+                        margin: 10px 5px;
+                    }
 
                     &:hover {
                         background-color: $color4;

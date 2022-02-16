@@ -26,7 +26,7 @@
             <main class="w-100" id="mainContent" data-bs-spy="scroll" data-bs-target="#navbar">
                 <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :linkLogo="linkLogoWhite" :scrollDown="scrollDown" />
             
-                <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" />
+                <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" :github="github" :linkedin="linkedin" :codepen="codepen" :youtube="youtube" />
             
                 <WorkSection :titleSection="titleSectionWork" :btnFreela="btnFreela" :btnPersonal="btnPersonal" :seeMore="seeMore" :projFreela="projFreela" :projPersonal="projPersonal" :linkWebsite="linkWebsite" :about="about" :technology="technology" />
             
@@ -97,6 +97,9 @@ export default {
                 
                 'I am a very curious person, who likes to learn and expand my knowledge. Every day I try to improve my skills so that I can grow professionally.'
                 ],
+
+            codepen: 'https://codepen.io/isaaclouzeiro/',
+            youtube: 'https://www.youtube.com/c/isaaclouzeirodev',
 
             moreDetails: "For more details",
             titleSkills: "Skills",
