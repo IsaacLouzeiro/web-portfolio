@@ -11,10 +11,10 @@
 
                     <a href="https://isaac-resume.firebaseapp.com/" target="_blank" class="btn mt-2 ms-0"><font-awesome-icon :icon="['fas', 'window-maximize']" /> {{ btnWebResume }}</a>
                     <br>
-                    <a :href="github" target="_blank" class="btn social ms-0 text-dark"><font-awesome-icon :icon="['fab', 'github']" /></a>
-                    <a :href="linkedin" target="_blank" class="btn social text-primary"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
-                    <a :href="codepen" target="_blank" class="btn social text-dark"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
-                    <a :href="youtube" target="_blank" class="btn social text-danger"><font-awesome-icon :icon="['fab', 'youtube']" /></a>
+                    <a :href="github" target="_blank" class="btn social ms-0 text-dark" title="Github"><font-awesome-icon :icon="['fab', 'github']" /></a>
+                    <a :href="linkedin" target="_blank" class="btn social text-primary" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+                    <a :href="codepen" target="_blank" class="btn social text-dark" title="Codepen"><font-awesome-icon :icon="['fab', 'codepen']" /></a>
+                    <a :href="youtube" target="_blank" class="btn social text-danger" title="Youtube"><font-awesome-icon :icon="['fab', 'youtube']" /></a>
                 </section>
             </div>
         </div>
