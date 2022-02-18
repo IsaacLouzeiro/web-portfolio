@@ -100,7 +100,7 @@ export default {
                     margin-right: 5px;
 
                     &.social {
-                        margin: 10px 5px;
+                        margin: 10px 5px 30px 5px;
                     }
 
                     &:hover {
