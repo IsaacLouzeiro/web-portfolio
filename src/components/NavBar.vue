@@ -98,7 +98,7 @@ export default {
                     color: $color1;
                     
                     &:hover, &:active {
-                        // background-color: $color5;
+                        background-color: $color5;
                         color: $color2;
                     }
                 }
