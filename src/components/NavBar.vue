@@ -1,13 +1,18 @@
 <template>
     <nav class="d-flex flex-column justify-content-between fixed-top" id="navbar">
         <div class="box-lang dropdown">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" />
+            <button class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" /> -->
+
+                <div id="hamburguerAnimation" @click="animateHamburger()">
+                    <div>
+                        <div class="t1 boxHamburguer"></div>
+                        <div class="t2 boxHamburguer"></div>
+                        <div class="t3 boxHamburguer"></div>
+                    </div>
+                </div>
+
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">pt-br</a></li>
-                <li><a class="dropdown-item active" href="#">en-us</a></li>
-            </ul>
         </div>
 
         <ul class="nav flex-column">
@@ -38,6 +43,12 @@ export default {
     props: {
         linkedin: String,
         github: String
+    },
+
+    methods: {
+        animateHamburger() {
+            document.getElementById("hamburguerAnimation").classList.toggle("hamburguerAnimated");
+        }
     }
 }
 </script>
@@ -68,21 +79,43 @@ export default {
                 &::after {
                     color: $color5;
                 }
-            }
-            
-            .dropdown-menu {
-                background-color: $color1;
-                min-width: 100px;
-                border: 0;
-                box-shadow: 1px 1px 5px rgba(117, 117, 117, 0.3);
 
-                a {
-                    color: $color5;
 
-                    &:hover, &:focus {
-                        background-color: $color3
+                // hamburguer animation
+                #hamburguerAnimation {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .5s;
+
+                    .boxHamburguer {
+                        border: 2px solid;
+                        margin: 4px auto;
+                        width: 30px;
+                        position: relative;
+                    }
+                    &.hamburguerAnimated {
+                        .t1 {
+                            transform: rotate(-45deg);
+                            top: 8px;
+                        }
+                        .t2 {
+                            transform: rotate(45deg);
+                        }
+                        .t3 {
+                            transform: rotate(-45deg);
+                            bottom: 8px;
+                        }
+                    }
+
+                    &:hover {
+                        color: $color3;
                     }
                 }
+
+                
             }
         }
 
