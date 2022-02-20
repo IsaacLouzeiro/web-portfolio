@@ -20,7 +20,7 @@
 
         <!-- site funcional -->
         <section v-show="this.manut == 0" class="principal d-flex">
-            <NavBar :linkedin="linkedin" :github="github" /><!-- // menu navegação -->
+            <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
             <main class="w-100" id="mainContent" data-bs-spy="scroll" data-bs-target="#navbar">
@@ -62,6 +62,16 @@ export default {
             // linkedin e github link
             linkedin: "https://www.linkedin.com/in/isaac-louzeiro/",
             github: "https://github.com/IsaacLouzeiro",
+
+            // NavBar.vue
+            listNav: [ 
+                "Home", 
+                "About", 
+                "Work", 
+                "Contact", 
+                "Github", 
+                "Linkedin"
+            ],
 
             // HomeSection.vue
             welcome: "Welcome to my website.",

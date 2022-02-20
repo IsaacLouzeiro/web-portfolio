@@ -1,6 +1,6 @@
 <template>
     <nav class="d-flex flex-column justify-content-between fixed-top" id="navbar">
-        <div class="box-lang dropdown">
+        <div class="dropdown">
             <button class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <!-- <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" /> -->
 
@@ -15,24 +15,42 @@
             </button>
         </div>
 
-        <ul class="nav flex-column">
+        <ul class="nav flex-column foiClicado" id="navList">
             <li class="nav-item">
-                <a class="nav-link" href="#Home"><font-awesome-icon :icon="['fas', 'home']" /></a>
+                <a class="nav-link" href="#Home">
+                    <span>{{ listNav[0] }}</span>
+                    <font-awesome-icon :icon="['fas', 'home']" />
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#About"><font-awesome-icon :icon="['fas', 'book-reader']" /></a>
+                <a class="nav-link" href="#About">
+                    <span>{{ listNav[1] }}</span>
+                    <font-awesome-icon :icon="['fas', 'book-reader']" />
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Work"><font-awesome-icon :icon="['fas', 'code']" /></a>
+                <a class="nav-link" href="#Work">
+                    <span>{{ listNav[2] }}</span>
+                    <font-awesome-icon :icon="['fas', 'code']" />
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Contact"><font-awesome-icon :icon="['fas', 'envelope']" /></a>
+                <a class="nav-link" href="#Contact">
+                    <span>{{ listNav[3] }}</span>
+                    <font-awesome-icon :icon="['fas', 'envelope']" />
+                </a>
             </li>
         </ul>
 
-        <div class="social-network d-flex flex-column justify-content-between">
-            <a :href="github" target="_blank"><font-awesome-icon :icon="['fab', 'github-square']" /></a>
-            <a :href="linkedin" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+        <div class="d-flex flex-column justify-content-between socialName" id="social-network">
+            <a :href="github" target="_blank">
+                <span>{{ listNav[4] }}</span>
+                <font-awesome-icon :icon="['fab', 'github-square']" />
+            </a>
+            <a :href="linkedin" target="_blank">
+                <span>{{ listNav[5] }}</span>
+                <font-awesome-icon :icon="['fab', 'linkedin']" />
+            </a>
         </div>
     </nav>
 </template>
@@ -42,12 +60,16 @@ export default {
     name: 'NavBar',
     props: {
         linkedin: String,
-        github: String
+        github: String,
+        listNav: Array
     },
 
     methods: {
         animateHamburger() {
             document.getElementById("hamburguerAnimation").classList.toggle("hamburguerAnimated");
+            document.getElementById("navList").classList.toggle("foiClicado");
+            document.getElementById("social-network").classList.toggle("socialName");
+            document.getElementById("navbar").classList.toggle("expandNav");
         }
     }
 }
@@ -63,7 +85,7 @@ export default {
         height: 100%;
         background-color: $color3;
 
-        .box-lang {
+        .dropdown {
             button {
                 border: 0;
                 width: 100%;
@@ -119,16 +141,24 @@ export default {
             }
         }
 
-        .nav {
+        #navList {
             li {
                 a {
-                    display: inline-block;
+                    // display: inline-block;
                     font-size: 1.2em;
                     width: 80%;
-                    margin: 1px 0;
+                    margin: 1px auto;
                     padding: 7px 10px;
                     border-radius: 4px;
                     color: $color1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        position: relative;
+                        transition: all 0s;
+                    }
                     
                     &:hover, &:active {
                         background-color: $color5;
@@ -141,15 +171,38 @@ export default {
                     color: $color2;
                 }
             }
+
+            &.foiClicado {
+                li {
+                    a {
+                        justify-content: center;
+
+                        span {
+                            position: absolute;
+                            z-index: -999999;
+                            color: $color3;
+                        }
+                    }
+                }
+            }
         }
 
-        .social-network {
+        #social-network {
             margin-bottom: 10px;
             a {
                 font-size: 1.6em;
                 color: $color1;
                 margin: 2px auto;
                 display: flex;
+                text-decoration: none;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 150px;
+                
+                span {
+                    font-size: .7em;
+                    padding: 0 5px;
+                }
 
                 &:hover {
                     color: $color2;
@@ -159,10 +212,27 @@ export default {
                     font-size: 1.6em;
                 }
             }
+
+            &.socialName {
+                a {
+                    justify-content: center;
+                    span {
+                        display: none;
+                    }
+                }
+            }
         }
 
         @media only screen and (max-width: 768px) {
             max-width: 65px;
+
+            &#navbar.expandNav {
+                max-width: 300px;
+            }
+        }
+
+        &#navbar.expandNav {
+            max-width: 300px;
         }
     }
 </style>
