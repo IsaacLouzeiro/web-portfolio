@@ -144,11 +144,10 @@ export default {
         #navList {
             li {
                 a {
-                    // display: inline-block;
                     font-size: 1.2em;
                     width: 80%;
                     margin: 1px auto;
-                    padding: 7px 10px;
+                    padding: 10px;
                     border-radius: 4px;
                     color: $color1;
                     display: flex;
