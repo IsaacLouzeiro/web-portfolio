@@ -185,9 +185,9 @@ export default {
 
     .areaPrincipal {
         min-height: 550px;
-        background-image: url(~@/assets/img/bg-work.webp);
-        background-position: top center;
-        background-size: cover;
+        background-image: url(~@/assets/img/bg-home.webp);
+        background-position: center;
+        // background-size: cover;
         position: relative;
 
         .areaCentral {

@@ -67,7 +67,7 @@ export default {
     }
 
     .areaPrincipal {
-        background-image: url(~@/assets/img/bg-contact.webp);
+        background-image: url(~@/assets/img/bg-home.webp);
         background-position: top center;
         background-size: cover;
         min-height: 200px;
@@ -188,7 +188,7 @@ export default {
 
         @media only screen and (max-width: 991.5px) {
             max-width: 100%;
-            background-image: url(~@/assets/img/bg-contact.webp);
+            background-image: url(~@/assets/img/bg-home.webp);
             background-position: top center;
             background-size: cover;
 
