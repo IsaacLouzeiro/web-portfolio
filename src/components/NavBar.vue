@@ -1,8 +1,8 @@
 <template>
     <nav class="d-flex flex-column justify-content-between fixed-top" id="navbar">
+        <!-- menu button -->
         <div class="dropdown">
             <button class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <font-awesome-icon :icon="['fas', 'language']" class="icon-lang" /> -->
 
                 <div id="hamburguerAnimation" @click="animateHamburger()">
                     <div>
@@ -15,6 +15,14 @@
             </button>
         </div>
 
+        <!-- language -->
+        <div class="d-flex justify-content-around" id="lang-box">
+            <button class="langBtn selectedLang">EN</button>
+
+            <button class="langBtn">PT</button>
+        </div>
+
+        <!-- main list -->
         <ul class="nav flex-column foiClicado" id="navList">
             <li class="nav-item">
                 <a class="nav-link" href="#Home">
@@ -42,6 +50,7 @@
             </li>
         </ul>
 
+        <!-- list social network -->
         <div class="d-flex flex-column justify-content-between socialName" id="social-network">
             <a :href="github" target="_blank">
                 <span>{{ listNav[4] }}</span>
@@ -141,7 +150,31 @@ export default {
             }
         }
 
+        #lang-box {
+            width: 100%;
+            max-width: 200px;
+            margin: 1em auto auto auto;
+
+            .langBtn {
+                border: none;
+                font-size: .8em;
+                width: 46%;
+                height: 30px;
+                background-color: $color1;
+                color: $color3;
+                font-weight: bold;
+                border-radius: 5px;
+                border: 3px solid $color3;
+                
+                &.selectedLang {
+                    border: 3px solid $color5;
+                }
+            }
+        }
+
         #navList {
+            margin-top: auto;
+            margin-bottom: auto;
             li {
                 a {
                     font-size: 1.2em;
@@ -187,6 +220,7 @@ export default {
         }
 
         #social-network {
+            margin-top: auto;
             margin-bottom: 10px;
             a {
                 font-size: 1.6em;
