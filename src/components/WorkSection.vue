@@ -93,25 +93,6 @@
                         </li>
                     </ul>
 
-
-                    <!-- <nav class="mb-3">
-                        <ul class="pagination d-flex align-items-center justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link link-arrow" href="#" aria-label="Previous">
-                                    &lsaquo;
-                                </a>
-                            </li>
-                            <li class="page-item ativo"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link link-arrow" href="#" aria-label="Next">
-                                    &rsaquo;
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> -->
-
                     <a href="https://github.com/IsaacLouzeiro" class="btn btn-github my-3 align-self-end" target="_blank"><font-awesome-icon :icon="['fab', 'github-alt']" class="github-icon" /> {{ seeMore }}</a>
             </div>
         </div>
