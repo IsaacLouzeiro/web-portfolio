@@ -93,6 +93,7 @@ export default {
         min-height: 100%;
         height: 100%;
         background-color: $color3;
+        z-index: 100000000;
 
         .dropdown {
             button {
