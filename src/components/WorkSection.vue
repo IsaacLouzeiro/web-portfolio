@@ -187,7 +187,8 @@ export default {
         min-height: 550px;
         background-image: url(~@/assets/img/bg-home.webp);
         background-position: center;
-        // background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
         position: relative;
 
         .areaCentral {
