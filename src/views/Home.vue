@@ -215,6 +215,16 @@ export default {
                 },
                 {
                     id: 3.1,
+                    alt: "Economie Demoday website",
+                    nome: "Economie Demoday Project",
+                    img: require('../assets/img/economie.gif'),
+                    description: 'Website focused on helping young and adult people to organize financially, in a friendly way. Demoday work project of the Proa Institute 4.0 in Web Java Programming in 2021.',
+                    link: 'https://economie-dinie.github.io/economie/resumo.html',
+                    repo: 'https://github.com/IsaacLouzeiro/economie',
+                    technologies: '[ HTML5 ] [ CSS3 ] [ JavaScript ]'
+                },
+                {
+                    id: 4.1,
                     alt: "Image Final Paper System",
                     nome: "Final Paper System Petshop",
                     img: require('../assets/img/petshopEnterprize.gif'),
@@ -224,7 +234,7 @@ export default {
                     technologies: '[ HTML5 ] [ CSS3 ] [ Bootstrap ] [ JavaScript ] [ AspNet ] [ MySQL ]'
                 },
                 {
-                    id: 4.1,
+                    id: 5.1,
                     alt: "Image Institutional Website",
                     nome: "Institutional Website",
                     img: require('../assets/img/projetoTcm.gif'),
@@ -234,7 +244,7 @@ export default {
                     technologies: '[ HTML5 ] [ CSS3 ] [ JavaScript ]'
                 },
                 {
-                    id: 5.1,
+                    id: 6.1,
                     alt: "Image Instagram Basic Display API",
                     nome: "Instagram Basic Display API",
                     img: require('../assets/img/apiinstagram.jpeg'),
