@@ -180,13 +180,14 @@ export default {
                 a {
                     font-size: 1.2em;
                     width: 80%;
-                    margin: 1px auto;
+                    margin: 3px auto;
                     padding: 10px;
                     border-radius: 4px;
                     color: $color1;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: space-around;
+                    background-color: rgba($color5, .3);
 
                     span {
                         position: relative;
@@ -194,8 +195,8 @@ export default {
                     }
                     
                     &:hover, &:active {
-                        background-color: $color5;
-                        color: $color2;
+                        background-color: $color1;
+                        color: $color5;
                     }
                 }
 

@@ -23,7 +23,7 @@
             <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
-            <main class="w-100" id="mainContent" data-bs-spy="scroll" data-bs-target="#navbar">
+            <main class="w-100" id="mainContent">
                 <HomeSection :welcome="welcome" :subtitleSection="subtitleSectionHome" :btnWhoIam="btnWhoIam" :btnProjects="btnProjects" :btnContact="btnContact" :myName="myName" :profession="profession" :textWebResume="textWebResume" :btnWebResume="btnWebResume" :linkLogo="linkLogoWhite" :scrollDown="scrollDown" />
             
                 <AboutSection :scrollDown="scrollDown" :titleSection="titleSectionAbout" :aboutText="aboutText" :moreDetails="moreDetails" :btnWebResume="btnWebResume" :titleSkills="titleSkills" :hardSkill="hardSkill" :softSkill="softSkill" :boxSkill="boxSkill" :boxSoftSkill="boxSoftSkill" :github="github" :linkedin="linkedin" :codepen="codepen" :youtube="youtube" />
