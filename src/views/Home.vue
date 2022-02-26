@@ -245,6 +245,16 @@ export default {
                 },
                 {
                     id: 6.1,
+                    alt: "image of website",
+                    nome: "Museum of Modern Art",
+                    img: require('../assets/img/mam.gif'),
+                    description: 'Website created by me, based on the Museum of Modern Art of São Paulo. Website project have no connections with the museum itself.',
+                    link: 'https://isaaclouzeiro.github.io/Museu-de-Arte-Moderna/',
+                    repo: 'https://github.com/IsaacLouzeiro/Museu-de-Arte-Moderna',
+                    technologies: '[ HTML5 ] [ CSS3 ] [ JavaScript ]',
+                },
+                {
+                    id: 7.1,
                     alt: "Image Instagram Basic Display API",
                     nome: "Instagram Basic Display API",
                     img: require('../assets/img/apiinstagram.jpeg'),
