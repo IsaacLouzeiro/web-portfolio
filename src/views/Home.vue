@@ -86,17 +86,6 @@ export default {
             linkLogo: require('../assets/img/logo-isaac-louzeiro-tiny.png'),
             linkLogoWhite: require('../assets/img/logo-isaac-louzeiro-tiny-white.png'),
             scrollDown: "scroll down",
-            // EM PORTUGUÊS
-            // welcome: "Bem vindo ao meu site.",
-            // subtitleSectionHome: "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
-            // btnWhoIam: "Quem sou eu?",
-            // btnProjects: "Projetos",
-            // btnContact: "Contato",
-            // myName: "Isaac Louzeiro",
-            // profession: "Desenvolvedor Front-end",
-            // textWebResume: "Meu Site-Currículo está no link a baixo",
-            // btnWebResume: "Currículo Web",
-            // scrollDown: "Rolar à baixo"
 
             // AboutSection.vue
             titleSectionAbout: "About me",
@@ -159,20 +148,6 @@ export default {
             ],
             boxSoftSkill: ['Self-taught', 'Teamwork', 'Adaptability'],
 
-            // EM PORTUGUÊS
-            // titleSectionAbout: "Sobre mim",
-            // aboutText: [
-            //     'Comecei o curso de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
-                
-            //     'Entrei no Instituto Proa em 2021, no curso ProProfissão 4.0 de programação Java Web, e sinto que aprendi bastante na parte comunicativa e técnica de trabalho, além de concluir com o TCC (Demoday) de um sistema de Economia para jovens de baixa renda, trabalhando principalmente no front-end do sistema com HTML, CSS e JavaScript.', 
-                
-            //     'Sou uma pessoa bastante curiosa, que gosta de aprender e expandir meus conhecimentos. A cada dia tento melhorar minhas habilidades para que eu possa crescer profissionalmente.'
-            // ],
-            // moreDetails: "Para mais informações",
-            // titleSkills: "Habilidades",
-            // hardSkill: "Habilidades técnicas",
-            // softSkill: "Habilidades comportamentais",
-            // boxSoftSkill: ['Autodidata', 'Trabalho em equipe', 'Adaptável']
 
             // WorkSection.vue
             titleSectionWork: "My Work",
@@ -182,7 +157,7 @@ export default {
             projFreela: [
                 {
                     id: 1,
-                    alt: "Imagem Alivisual",
+                    alt: "Image Alivisual",
                     nome: "Alivisual",
                     img: require('../assets/img/alivisual.gif'),
                     description: 'The website was made for "Alivisual", a producer of audiovisual & photography from São Paulo.',
@@ -192,7 +167,7 @@ export default {
                 },
                 {
                     id: 2,
-                    alt: "Imagem Leandro Louzeiro Portfolio",
+                    alt: "Image Leandro Louzeiro Portfolio",
                     nome: "Leandro Louzeiro Portfolio",
                     img: require('../assets/img/leandroLouzeiro.gif'),
                     description: 'Photograpy portfolio developed for the photographer Leandro Louzeiro.',
@@ -268,14 +243,6 @@ export default {
             about: 'About',
             technology: 'Technologies',
 
-            // EM PORTUGUÊS
-            // titleSectionWork: "Meus projetos",
-            // btnFreela: "Freelances",
-            // btnPersonal: "Projetos relevantes",
-            // seeMore: "Veja Mais",
-            // linkWebsite: 'Visitar site',
-            // about: 'Sobre',
-            // technology: 'Tecnologias',
 
             // ContactSection.vue
             titleSectionContact: "Contact",
@@ -286,7 +253,48 @@ export default {
             localization: "São Paulo, SP | Brazil",
             linkMap: require('../assets/img/maps.webp'),
 
+
             // EM PORTUGUÊS
+            // HomeSection.vue
+            // welcome: "Bem vindo ao meu site.",
+            // subtitleSectionHome: "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
+            // btnWhoIam: "Quem sou eu?",
+            // btnProjects: "Projetos",
+            // btnContact: "Contato",
+            // myName: "Isaac Louzeiro",
+            // profession: "Desenvolvedor Front-end",
+            // textWebResume: "Meu Site-Currículo está no link a baixo",
+            // btnWebResume: "Currículo Web",
+            // scrollDown: "Rolar à baixo",
+
+            // EM PORTUGUÊS
+            // AboutSection.vue
+            // titleSectionAbout: "Sobre mim",
+            // aboutText: [
+            //     'Comecei o curso de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
+                
+            //     'Entrei no Instituto Proa em 2021, no curso ProProfissão 4.0 de programação Java Web, e sinto que aprendi bastante na parte comunicativa e técnica de trabalho, além de concluir com o TCC (Demoday) de um sistema de Economia para jovens de baixa renda, trabalhando principalmente no front-end do sistema com HTML, CSS e JavaScript.', 
+                
+            //     'Sou uma pessoa bastante curiosa, que gosta de aprender e expandir meus conhecimentos. A cada dia tento melhorar minhas habilidades para que eu possa crescer profissionalmente.'
+            // ],
+            // moreDetails: "Para mais informações",
+            // titleSkills: "Habilidades",
+            // hardSkill: "Habilidades técnicas",
+            // softSkill: "Habilidades comportamentais",
+            // boxSoftSkill: ['Autodidata', 'Trabalho em equipe', 'Adaptável'],
+
+            // EM PORTUGUÊS
+            // WorkSection.vue
+            // titleSectionWork: "Meus projetos",
+            // btnFreela: "Freelances",
+            // btnPersonal: "Projetos relevantes",
+            // seeMore: "Veja Mais",
+            // linkWebsite: 'Visitar site',
+            // about: 'Sobre',
+            // technology: 'Tecnologias',
+
+            // EM PORTUGUÊS
+            // ContactSection.vue
             // titleSectionContact: "Contato",
             // subtitleSectionContact: "Se você estiver interessado no meu trabalho ou precisar de informações adicionais, por favor, entre em contato.",
             // titleMaps: "Localização",
@@ -294,14 +302,14 @@ export default {
         }
     },
     components: {
-    EmManutencao,
-    CustomCursor,
-    NavBar,
-    HomeSection,
-    AboutSection,
-    WorkSection,
-    ContactSection
-},
+        EmManutencao,
+        CustomCursor,
+        NavBar,
+        HomeSection,
+        AboutSection,
+        WorkSection,
+        ContactSection
+    },
     created() {
         var windowWidth = window.innerWidth;
         if(windowWidth < 768) {
