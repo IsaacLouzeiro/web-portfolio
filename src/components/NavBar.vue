@@ -214,6 +214,7 @@ export default {
                         span {
                             position: absolute;
                             z-index: -999999;
+                            left: -999px;
                             color: $color3;
                         }
                     }

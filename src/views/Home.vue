@@ -253,6 +253,16 @@ export default {
             localization: "São Paulo, SP | Brazil",
             linkMap: require('../assets/img/maps.webp'),
 
+            // EM PORTUGUÊS
+            // NavBar.vue
+            // listNav: [ 
+            //     "Início", 
+            //     "Sobre", 
+            //     "Trabalhos", 
+            //     "Contact", 
+            //     "Github", 
+            //     "Linkedin"
+            // ],
 
             // EM PORTUGUÊS
             // HomeSection.vue
@@ -315,6 +325,7 @@ export default {
         if(windowWidth < 768) {
             this.scrollDown = "swipe up"
         }
+
     },
     mounted() {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -322,6 +333,61 @@ export default {
         }else {
             document.getElementById('mainContent').classList.remove('scrollbar')
         }
+
+        const ptBr = () => {
+            // NavBar.vue
+            this.listNav = [ 
+                "Início", 
+                "Sobre", 
+                "Trabalhos", 
+                "Contato", 
+                "Github", 
+                "Linkedin"
+            ],
+
+            // HomeSection.vue
+            this.welcome = "Bem vindo ao meu site.";
+            this.subtitleSectionHome = "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
+            this.btnWhoIam = "Quem sou eu?",
+            this.btnProjects = "Projetos",
+            this.btnContact = "Contato",
+            this.myName = "Isaac Louzeiro",
+            this.profession = "Desenvolvedor Front-end",
+            this.textWebResume = "Meu Currículo Web está no link a baixo",
+            this.btnWebResume = "Currículo Web",
+            this.scrollDown = "Rolar à baixo",
+
+            // AboutSection.vue
+            this.titleSectionAbout = "Sobre mim",
+            this.aboutText = [
+                'Comecei o curso de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
+                
+                'Entrei no Instituto Proa em 2021, no curso ProProfissão 4.0 de programação Java Web, e sinto que aprendi bastante na parte comunicativa e técnica de trabalho, além de concluir com o TCC (Demoday) de um sistema de Economia para jovens de baixa renda, trabalhando principalmente no front-end do sistema com HTML, CSS e JavaScript.', 
+                
+                'Sou uma pessoa bastante curiosa, que gosta de aprender e expandir meus conhecimentos. A cada dia tento melhorar minhas habilidades para que eu possa crescer profissionalmente.'
+            ],
+            this.moreDetails = "Para mais informações",
+            this.titleSkills = "Habilidades",
+            this.hardSkill = "Habilidades técnicas",
+            this.softSkill = "Habilidades comportamentais",
+            this.boxSoftSkill = ['Autodidata', 'Trabalho em equipe', 'Adaptável'],
+
+            // WorkSection.vue
+            this.titleSectionWork = "Meus projetos",
+            this.btnFreela = "Freelances",
+            this.btnPersonal = "Projetos relevantes",
+            this.seeMore = "Veja Mais",
+            this.linkWebsite = 'Visitar site',
+            this.about = 'Sobre',
+            this.technology = 'Tecnologias',
+
+            // ContactSection.vue
+            this.titleSectionContact = "Contato",
+            this.subtitleSectionContact = "Se você estiver interessado no meu trabalho ou precisar de informações adicionais, por favor, entre em contato.",
+            this.titleMaps = "Localização",
+            this.localization = "São Paulo, SP | Brasil"
+        }
+        ptBr()
     }
 }
 </script>
