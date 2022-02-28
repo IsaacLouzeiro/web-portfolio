@@ -251,64 +251,7 @@ export default {
             email: "isaacelias1110@gmail.com",
             linkedinLink: "/in/isaac-louzeiro",
             localization: "São Paulo, SP | Brazil",
-            linkMap: require('../assets/img/maps.webp'),
-
-            // EM PORTUGUÊS
-            // NavBar.vue
-            // listNav: [ 
-            //     "Início", 
-            //     "Sobre", 
-            //     "Trabalhos", 
-            //     "Contact", 
-            //     "Github", 
-            //     "Linkedin"
-            // ],
-
-            // EM PORTUGUÊS
-            // HomeSection.vue
-            // welcome: "Bem vindo ao meu site.",
-            // subtitleSectionHome: "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
-            // btnWhoIam: "Quem sou eu?",
-            // btnProjects: "Projetos",
-            // btnContact: "Contato",
-            // myName: "Isaac Louzeiro",
-            // profession: "Desenvolvedor Front-end",
-            // textWebResume: "Meu Site-Currículo está no link a baixo",
-            // btnWebResume: "Currículo Web",
-            // scrollDown: "Rolar à baixo",
-
-            // EM PORTUGUÊS
-            // AboutSection.vue
-            // titleSectionAbout: "Sobre mim",
-            // aboutText: [
-            //     'Comecei o curso de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
-                
-            //     'Entrei no Instituto Proa em 2021, no curso ProProfissão 4.0 de programação Java Web, e sinto que aprendi bastante na parte comunicativa e técnica de trabalho, além de concluir com o TCC (Demoday) de um sistema de Economia para jovens de baixa renda, trabalhando principalmente no front-end do sistema com HTML, CSS e JavaScript.', 
-                
-            //     'Sou uma pessoa bastante curiosa, que gosta de aprender e expandir meus conhecimentos. A cada dia tento melhorar minhas habilidades para que eu possa crescer profissionalmente.'
-            // ],
-            // moreDetails: "Para mais informações",
-            // titleSkills: "Habilidades",
-            // hardSkill: "Habilidades técnicas",
-            // softSkill: "Habilidades comportamentais",
-            // boxSoftSkill: ['Autodidata', 'Trabalho em equipe', 'Adaptável'],
-
-            // EM PORTUGUÊS
-            // WorkSection.vue
-            // titleSectionWork: "Meus projetos",
-            // btnFreela: "Freelances",
-            // btnPersonal: "Projetos relevantes",
-            // seeMore: "Veja Mais",
-            // linkWebsite: 'Visitar site',
-            // about: 'Sobre',
-            // technology: 'Tecnologias',
-
-            // EM PORTUGUÊS
-            // ContactSection.vue
-            // titleSectionContact: "Contato",
-            // subtitleSectionContact: "Se você estiver interessado no meu trabalho ou precisar de informações adicionais, por favor, entre em contato.",
-            // titleMaps: "Localização",
-            // localization: "São Paulo, SP | Brasil",
+            linkMap: require('../assets/img/maps.webp')
         }
     },
     components: {
