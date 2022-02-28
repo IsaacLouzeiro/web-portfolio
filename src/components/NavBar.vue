@@ -70,9 +70,7 @@ export default {
     props: {
         linkedin: String,
         github: String,
-        listNav: Array,
-        langEn: String,
-        langPt: String
+        listNav: Array
     },
 
     mounted() {
@@ -104,6 +102,7 @@ export default {
             document.getElementById("navbar").classList.toggle("expandNav");
         },
 
+        // LANGUAGE LOCAL STORAGE
         langBtn(btn, lang) {
             location.reload();
             switch (lang) {

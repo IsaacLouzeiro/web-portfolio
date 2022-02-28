@@ -20,7 +20,7 @@
 
         <!-- site funcional -->
         <section v-show="this.manut == 0" class="principal d-flex">
-            <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" :langEn="langEn" /><!-- // menu navegação -->
+            <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
             <main class="w-100" id="mainContent">
@@ -389,7 +389,12 @@ export default {
             this.titleMaps = "Localização",
             this.localization = "São Paulo, SP | Brasil"
         }
-        ptBr
+        
+        if(document.getElementById('enUsLang').classList.contains('selectedLang')) {
+            ptBr
+        }else {
+            ptBr()
+        }
     }
 }
 </script>
