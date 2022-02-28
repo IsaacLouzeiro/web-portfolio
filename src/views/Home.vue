@@ -20,7 +20,7 @@
 
         <!-- site funcional -->
         <section v-show="this.manut == 0" class="principal d-flex">
-            <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" /><!-- // menu navegação -->
+            <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" :langEn="langEn" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
             <main class="w-100" id="mainContent">
@@ -334,6 +334,8 @@ export default {
             document.getElementById('mainContent').classList.remove('scrollbar')
         }
 
+        // LANGUAGE
+
         const ptBr = () => {
             // NavBar.vue
             this.listNav = [ 
@@ -387,7 +389,7 @@ export default {
             this.titleMaps = "Localização",
             this.localization = "São Paulo, SP | Brasil"
         }
-        ptBr()
+        ptBr
     }
 }
 </script>

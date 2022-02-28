@@ -17,9 +17,9 @@
 
         <!-- language -->
         <div class="d-flex justify-content-around" id="lang-box">
-            <button class="langBtn selectedLang">EN</button>
+            <button class="langBtn selectedLang" id="enUsLang" @click="langBtn(this, 'en')">EN</button>
 
-            <button class="langBtn">PT</button>
+            <button class="langBtn" id="ptBrLang" @click="langBtn(this, 'pt')">PT</button>
         </div>
 
         <!-- main list -->
@@ -70,7 +70,30 @@ export default {
     props: {
         linkedin: String,
         github: String,
-        listNav: Array
+        listNav: Array,
+        langEn: String,
+        langPt: String
+    },
+
+    mounted() {
+        // SETTING BUTTON LANGUAGE
+        const memLangPt = localStorage.getItem('pt');
+
+        const memLangEn = localStorage.getItem('en');
+
+        document.getElementById("enUsLang").classList.add("selectedLang");
+        // if has the lang pt on localStorage
+        if (memLangPt) {
+            document.getElementById("ptBrLang").classList.add("selectedLang");
+            document.getElementById("enUsLang").classList.remove("selectedLang");
+            // ptBr();
+        }
+
+        // if has the lang en on localStorage
+        if (memLangEn) {
+            document.getElementById("enUsLang").classList.add("selectedLang");
+            document.getElementById("ptBrLang").classList.remove("selectedLang");
+        }
     },
 
     methods: {
@@ -79,6 +102,48 @@ export default {
             document.getElementById("navList").classList.toggle("foiClicado");
             document.getElementById("social-network").classList.toggle("socialName");
             document.getElementById("navbar").classList.toggle("expandNav");
+        },
+
+        langBtn(btn, lang) {
+            location.reload();
+            switch (lang) {
+                case 'pt':
+                    // remove the lang on localStorage
+                    localStorage.removeItem('en');
+                    // insert active class
+                    document.getElementById('ptBrLang').classList.add("selectedLang");
+                    // ptBr();
+
+                    // if has the classe active
+                    if (document.getElementById('ptBrLang').classList.contains('selectedLang')) {
+                        // add the lang on localStorage
+                        localStorage.setItem('pt', true)
+                        // ptBr();
+                        return
+                    }
+                    // else remove
+                    localStorage.removeItem('pt');
+                    break;
+
+                case 'en':
+                    // remove the lang on localStorage
+                    localStorage.removeItem('pt');
+                    // insert active class
+                    document.getElementById('enUsLang').classList.add("selectedLang");
+
+                    // if has the classe active
+                    if (document.getElementById('enUsLang').classList.contains('selectedLang')) {
+                        // add the lang on localStorage
+                        localStorage.setItem('en', true)
+                        return
+                    }
+                    // else remove
+                    localStorage.removeItem('en');
+                    break;
+            
+                default:
+                    break;
+            }
         }
     }
 }
