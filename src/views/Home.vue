@@ -92,7 +92,7 @@ export default {
             aboutText: [
                 'I started the Systems Development course at 𝘌𝘛𝘌𝘊 𝘗𝘳𝘰𝘧𝘦𝘴𝘴𝘰𝘳 𝘉𝘢𝘴𝘪𝘭𝘪𝘥𝘦𝘴 𝘥𝘦 𝘎𝘰𝘥𝘰𝘺 in 2019, and finished it in 2020. I did my final paper project in a PetShop system in Asp.Net MVC, worked with the front-end of the application using HTML, CSS, JavaScript and Bootstrap, and in the backend in Asp.Net MVC.', 
                 
-                'I joined 𝘐𝘯𝘴𝘵𝘪𝘵𝘶𝘵𝘰 𝘗𝘳𝘰𝘢 in 2021, in the ProProfissão 4.0 course on Java Web programming, and I feel that I have learned a lot in the communicative and technical work part, in addition to it, I have concluded my final paper work project (Demoday) in Economics system for low-income for young people, working mainly on the front-end system with HTML, CSS and JavaScript.', 
+                'I joined 𝘐𝘯𝘴𝘵𝘪𝘵𝘶𝘵𝘰 𝘗𝘳𝘰𝘢 in 2021, in the 𝘗𝘳𝘰𝘗𝘳𝘰𝘧𝘪𝘴𝘴ã𝘰 4.0 course on Java Web programming, and I feel that I have learned a lot in the communicative and technical work part, in addition to it, I have concluded my final paper work project (Demoday) in Economics system for low-income for young people, working mainly on the front-end system with HTML, CSS and JavaScript.', 
                 
                 'I am a very curious person, who likes to learn and expand my knowledge. Every day I try to improve my skills so that I can grow professionally.'
                 ],
