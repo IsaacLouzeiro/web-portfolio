@@ -20,7 +20,7 @@
 
         <!-- site funcional -->
         <section v-show="this.manut == 0" class="principal d-flex">
-            <NavBar :linkedin="linkedin" :github="github" :listNav="listNav" /><!-- // menu navegação -->
+            <NavBar :linkedin="linkedin" :github="github" :codepen="codepen" :listNav="listNav" /><!-- // menu navegação -->
 
             <!-- conteudo principal -->
             <main class="w-100" id="mainContent">
@@ -70,7 +70,8 @@ export default {
                 "Work", 
                 "Contact", 
                 "Github", 
-                "Linkedin"
+                "Linkedin",
+                "Codepen"
             ],
 
             // HomeSection.vue
@@ -287,7 +288,8 @@ export default {
                 "Projetos", 
                 "Contato", 
                 "Github", 
-                "Linkedin"
+                "Linkedin",
+                "Codepen"
             ],
 
             // HomeSection.vue

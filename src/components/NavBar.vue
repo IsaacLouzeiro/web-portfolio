@@ -52,6 +52,10 @@
 
         <!-- list social network -->
         <div class="d-flex flex-column justify-content-between socialName" id="social-network">
+            <a :href="codepen" target="_blank">
+                <span>{{ listNav[6] }}</span>
+                <p class="logoCodepen"><font-awesome-icon :icon="['fab', 'codepen']" /></p>
+            </a>
             <a :href="github" target="_blank">
                 <span>{{ listNav[4] }}</span>
                 <font-awesome-icon :icon="['fab', 'github-square']" />
@@ -70,6 +74,7 @@ export default {
     props: {
         linkedin: String,
         github: String,
+        codepen: String,
         listNav: Array
     },
 
@@ -304,8 +309,20 @@ export default {
                     padding: 0 5px;
                 }
 
+                .logoCodepen {
+                    margin: 0;
+                    width: 25px;
+                    height: 25px;
+                    color: $color3;
+                    background-color: $color1;
+                    border-radius: 3px;
+                    font-size: .7em;
+                }
+
                 &:hover {
                     color: $color2;
+
+                    .logoCodepen { background-color: $color2; }
                 }
 
                 @media only screen and (max-width: 768px) {
