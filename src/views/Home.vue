@@ -76,7 +76,7 @@ export default {
 
             // HomeSection.vue
             welcome: "Welcome to my website.",
-            subtitleSectionHome: "''Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.''",
+            subtitleSectionHome: "Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn.",
             btnWhoIam: "Who I'am?",
             btnProjects: "Projects",
             btnContact: "Contact",
@@ -294,7 +294,7 @@ export default {
 
             // HomeSection.vue
             this.welcome = "Bem vindo ao meu site.";
-            this.subtitleSectionHome = "''Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.''",
+            this.subtitleSectionHome = "Recentemente minha paixão é criar sites. Eu sou uma pessoa curiosa, constantemente procurando coisas novas para aprender.",
             this.btnWhoIam = "Quem sou eu?",
             this.btnProjects = "Projetos",
             this.btnContact = "Contato",
