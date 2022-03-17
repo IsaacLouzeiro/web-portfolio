@@ -18,12 +18,12 @@
         <div class="col-lg-4 col-12 areaLateral d-flex align-items-center justify-content-center">
             <section class="py-3">
                 <img src="../assets/img/img-isaac.jpeg" alt="My Image" class="imgIsaac">
-                <h2 class="mt-3 mb-2">{{ myName }}</h2>
-                <span >{{ profession }}</span><br>
-
-                <div class="py-3">
+                <div class="pt-3">
                     <img :src="linkLogo" alt="My Logo" class="myLogo">
                 </div>
+                <h2 class="mt-3 mb-1">{{ myName }}</h2>
+                <span class="mb-5 fst-italic">{{ profession }}</span><br>
+
 
                 <span class="webResume">{{ textWebResume }}</span><br>
 
@@ -165,9 +165,9 @@ export default {
 
             .myLogo {
                 width: 100%;
-                max-width: 120px;
+                max-width: 60px;
                 position: relative;
-                filter: drop-shadow(0 0 .6rem rgba($color3, .4));
+                filter: drop-shadow(0 0 .6rem rgba($color3, .3));
                 animation: loading 1.7s linear infinite;
             }
 
