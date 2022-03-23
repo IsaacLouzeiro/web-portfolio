@@ -180,6 +180,16 @@ export default {
             ],
             projPersonal: [
                 {
+                    id: 1.1,
+                    alt: "Image Web Design Gallery Website",
+                    nome: "Web Design Art Gallery",
+                    img: require('../assets/img/webdesigngallery.webp'),
+                    description: 'Showing my projects of web design, UI/UX and CSS arts, mostly of my codepen.',
+                    link: 'https://webdesigngallery.netlify.app/',
+                    repo: 'https://github.com/IsaacLouzeiro/webdesign-gallery',
+                    technologies: '[ HTML5 ] [ SASS ] [ Vue Js ]'
+                },
+                {
                     id: 2.1,
                     alt: "Image website resume",
                     nome: "My website resume",
