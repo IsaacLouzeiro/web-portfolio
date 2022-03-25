@@ -23,14 +23,14 @@
 
                     <ul class="box-projetos w-100">
                         <li v-for="item in projFreela" :key="item.projFreela" v-show="this.freelancer == 'open'">
-                            <div @click="arrayFreela(item.id, 'boxOpen')">
+                            <a :href="'#'+item.id" @click="arrayFreela(item.id, 'boxOpen')">
                                 <div class="bg-proj">
                                     <img :src="item.img" :alt="item.alt">
                                 </div>
                                 <div class="bottom-proj">
                                     <span>{{ item.nome }}</span>
                                 </div>
-                            </div>
+                            </a>
 
                             <div :id="item.id" class="another-box">
                                 <section>
@@ -58,14 +58,14 @@
                         </li>
 
                         <li v-for="item in projPersonal" :key="item.projPersonal" v-show="this.pessoal == 'open'">
-                            <div @click="arrayFreela(item.id, 'boxOpen')">
+                            <a :href="'#'+item.id" @click="arrayFreela(item.id, 'boxOpen')">
                                 <div class="bg-proj">
                                     <img :src="item.img" :alt="item.alt">
                                 </div>
                                 <div class="bottom-proj">
                                     <span>{{ item.nome }}</span>
                                 </div>
-                            </div>
+                            </a>
 
                             <div :id="item.id" class="another-box">
                                 <section>
@@ -241,6 +241,11 @@ export default {
                     margin: 3px;
                     display: inline-block;
 
+                    a {
+                        text-decoration: none;
+                        color: $color5;
+                    }
+
                     .bg-proj {
                         border: 3px solid $color4;
 
@@ -275,7 +280,7 @@ export default {
                         z-index: -1000;
                         display: flex;
                         justify-content: center;
-                        align-items: center;
+                        align-items: flex-start;
                         background-color: rgba($color2, .2);
                         transition: z-index .3s, padding .7s;
                         padding-top: 500px;
@@ -289,6 +294,7 @@ export default {
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
+                            margin-top: 40px;
 
                             .box-header {
                                 display: flex;
