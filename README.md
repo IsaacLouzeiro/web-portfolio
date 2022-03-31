@@ -10,7 +10,7 @@
 
 #### My website portfolio, for the purpose of promote my work as a Front-end Developer. Version 2.0.
 
-### -- Technologies
+### -- Technologies 
 
 <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="35px" alt="Html 5" title="Html 5" /></span>
 <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="35px" alt="Sass" title="Sass" /></span>
@@ -30,7 +30,7 @@
 
 #### Meu portifolio web, com o objetivo de divulgar meu trabalho como Desenvolvedor Front-end. Versão 2.0.
 
-### -- Tecnologias
+### -- Tecnologias 
 
 
 <span><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="35px" alt="Html 5" title="Html 5" /></span>
