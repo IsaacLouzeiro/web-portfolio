@@ -180,6 +180,16 @@ export default {
             ],
             projPersonal: [
                 {
+                    id: 0,
+                    alt: "Image My Website Portfolio Website",
+                    nome: "My Website Portfolio",
+                    img: require('../assets/img/webportfolio.webp'),
+                    description: 'My website portfolio, for the purpose of promote my work as a Front-end Developer. Version 2.0.',
+                    link: 'https://isaaclouzeiro.dev.br/',
+                    repo: 'https://github.com/IsaacLouzeiro/web-portfolio',
+                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
+                },
+                {
                     id: 1.1,
                     alt: "Image Web Design Gallery Website",
                     nome: "Web Design Art Gallery",
@@ -191,8 +201,8 @@ export default {
                 },
                 {
                     id: 2.1,
-                    alt: "Image website resume",
-                    nome: "My website resume",
+                    alt: "Image Website Resume",
+                    nome: "My Website Resume",
                     img: require('../assets/img/resumewebsite.webp'),
                     description: 'Web resume, a relaxed way of show my professional side.',
                     link: 'https://isaac-resume.firebaseapp.com/',
