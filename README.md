@@ -4,7 +4,7 @@
 
 ## Here you can see a bit of my project.
 
-![](https://github.com/IsaacLouzeiro/web-portfolio/blob/master/webPortfolio-gif.gif "Preview")
+![](https://github.com/IsaacLouzeiro/web-portfolio/blob/master/webportfolio-gif.gif "Preview")
 
 ### -- About
 
@@ -24,7 +24,7 @@
 
 ## Aqui você consegue ver um pouco do meu projeto.
 
-![](https://github.com/IsaacLouzeiro/web-portfolio/blob/master/webPortfolio-gif.gif "Pré-visualização")
+![](https://github.com/IsaacLouzeiro/web-portfolio/blob/master/webportfolio-gif.gif "Pré-visualização")
 
 ### -- Sobre
 
