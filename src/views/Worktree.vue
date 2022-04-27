@@ -36,9 +36,10 @@ export default {
         return {
             img: require('../assets/img/img-isaac.jpeg'),
             myName: "Isaac Louzeiro",
-            initialPhrase: "Você é um recrutador ou está querendo saber sobre meu trabalho e precisa de praticidade?",
+            // initialPhrase: "Você está querendo saber sobre meu trabalho de maneira breve e fácil?",
+            initialPhrase: "Are you waiting to know about my work in a quickly way?",
             myPhrase: "''Recently my passion is creating websites. I'm very curious and constantly searching for new things to learn!''",
-            skill: "Principais Habilidades",
+            skill: "Main Skills",
             skList: [
                 {
                     name: "HTML5"
@@ -61,7 +62,8 @@ export default {
                 {
                     name: "Wordpress"
                 }
-            ]
+            ],
+            
         }
     },
 
