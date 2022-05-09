@@ -91,7 +91,7 @@ export default {
             // AboutSection.vue
             titleSectionAbout: "About me",
             aboutText: [
-                'I started the Systems Development course at 𝘌𝘛𝘌𝘊 𝘗𝘳𝘰𝘧𝘦𝘴𝘴𝘰𝘳 𝘉𝘢𝘴𝘪𝘭𝘪𝘥𝘦𝘴 𝘥𝘦 𝘎𝘰𝘥𝘰𝘺 in 2019, and finished it in 2020. I did my final paper project in a PetShop system in Asp.Net MVC, worked with the front-end of the application using HTML, CSS, JavaScript and Bootstrap, and in the backend in Asp.Net MVC.', 
+                'I started the Systems Development Technical Course at 𝘌𝘛𝘌𝘊 𝘗𝘳𝘰𝘧𝘦𝘴𝘴𝘰𝘳 𝘉𝘢𝘴𝘪𝘭𝘪𝘥𝘦𝘴 𝘥𝘦 𝘎𝘰𝘥𝘰𝘺 in 2019, and finished it in 2020. I did my final paper project in a PetShop system in Asp.Net MVC, worked with the front-end of the application using HTML, CSS, JavaScript and Bootstrap, and in the backend in Asp.Net MVC.', 
                 
                 'I joined 𝘐𝘯𝘴𝘵𝘪𝘵𝘶𝘵𝘰 𝘗𝘳𝘰𝘢 in 2021, in the 𝘗𝘳𝘰𝘗𝘳𝘰𝘧𝘪𝘴𝘴ã𝘰 4.0 course on Java Web programming, and I feel that I have learned a lot in the communicative and technical work part, in addition to it, I have concluded my final paper work project (Demoday) in Economics system for low-income for young people, working mainly on the front-end system with HTML, CSS and JavaScript.', 
                 
@@ -327,7 +327,7 @@ export default {
             // AboutSection.vue
             this.titleSectionAbout = "Sobre mim",
             this.aboutText = [
-                'Comecei o curso de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
+                'Comecei o Curso Técnico de Desenvolvimento de Sistemas na ETEC Professor Basilídes de Godoy em 2019, e terminei em 2020. Fiz meu projeto de TCC de um sistema de PetShop em Asp.Net MVC, trabalhei com o front-end da aplicação utilizando HTML, CSS, JavaScript e  Bootstrap, e no back-end em Asp.Net MVC.', 
                 
                 'Entrei no Instituto Proa em 2021, no curso ProProfissão 4.0 de programação Java Web, e sinto que aprendi bastante na parte comunicativa e técnica de trabalho, além de concluir com o TCC (Demoday) de um sistema de Economia para jovens de baixa renda, trabalhando principalmente no front-end do sistema com HTML, CSS e JavaScript.', 
                 
