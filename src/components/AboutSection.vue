@@ -69,7 +69,7 @@ export default {
     }
 
     .areaPrincipal {
-        background-image: url(~@/assets/img/bg-home.webp);
+        background-image: url(~@/assets/img/bg.jpg);
         background-position: top center;
         background-size: cover;
         min-height: 200px;

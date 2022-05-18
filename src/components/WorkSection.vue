@@ -166,7 +166,7 @@ export default {
 
     .areaPrincipal {
         min-height: 550px;
-        background-image: url(~@/assets/img/bg-home.webp);
+        background-image: url(~@/assets/img/bg.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -184,7 +184,7 @@ export default {
             top: 0;
             bottom: 0;
             right: 0;
-            background-color: rgba($color1, 0.83);
+            background-color: rgba($color2, 1);
             border-left: 5px dashed $color2;
         }
 
@@ -240,6 +240,7 @@ export default {
                 li {
                     margin: 3px;
                     display: inline-block;
+                    border: 3px solid $color4;
 
                     a {
                         text-decoration: none;
@@ -247,7 +248,7 @@ export default {
                     }
 
                     .bg-proj {
-                        border: 3px solid $color4;
+                        // border: 3px solid $color4;
 
                         img {
                             width: 100%;
@@ -257,6 +258,7 @@ export default {
                     }
 
                     .bottom-proj {
+                        border-top: 2px solid $color4;
                         background-color: $color2;
                         text-align: left;
                         display: flex;
