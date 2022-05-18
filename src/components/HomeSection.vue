@@ -66,7 +66,7 @@ export default {
     }
 
     .areaPrincipal {
-        background-image: url(~@/assets/img/bg-home.webp);
+        background-image: url(~@/assets/img/bg.gif);
         background-position: top center;
         background-size: cover;
         min-height: 200px;
@@ -119,6 +119,10 @@ export default {
                 }
             }
 
+        }
+
+        @media only screen and (max-width: 992px) {
+            background-position: center;
         }
     }
 
