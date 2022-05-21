@@ -81,7 +81,7 @@ export default {
             btnProjects: "Projects",
             btnContact: "Contact",
             myName: "Isaac Louzeiro",
-            profession: "Web Developer",
+            profession: "Front-End Web Developer",
             textWebResume: "My Website Resume is on the link below",
             btnWebResume: "Web Resume",
             linkLogo: require('../assets/img/logo-isaac-louzeiro-tiny.png'),
@@ -319,9 +319,9 @@ export default {
             this.btnProjects = "Projetos",
             this.btnContact = "Contato",
             this.myName = "Isaac Louzeiro",
-            this.profession = "Desenvolvedor Web",
+            this.profession = "Desenvolvedor Web Front-End",
             this.textWebResume = "Meu Currículo Web está no link a baixo",
-            this.btnWebResume = "Currículo Web",
+            this.btnWebResume = "Currículo Web",''
             this.scrollDown = "Rolar à baixo",
 
             // AboutSection.vue
