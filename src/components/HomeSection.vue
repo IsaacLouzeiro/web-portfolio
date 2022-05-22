@@ -128,6 +128,7 @@ export default {
 
     .areaLateral {
         background-color: $color2;
+        box-shadow: inset 0 -3px 5px rgba($color3, .2);
         min-height: 400px;
         position: relative;
 

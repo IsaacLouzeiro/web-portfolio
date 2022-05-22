@@ -185,7 +185,7 @@ export default {
             bottom: 0;
             right: 0;
             background-color: rgba($color2, 1);
-            border-left: 5px dashed $color2;
+            box-shadow: inset 0 -3px 5px rgba($color3, .2);
         }
 
         .PrincConteudo {

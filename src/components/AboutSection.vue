@@ -123,6 +123,7 @@ export default {
 
     .areaLateral {
         background-color: $color2;
+        box-shadow: inset 0 -3px 5px rgba($color3, .2);
         position: relative;
 
         section {
