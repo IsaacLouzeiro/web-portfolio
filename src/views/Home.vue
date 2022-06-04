@@ -367,6 +367,8 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/scss/colors.scss';
 
+    * { cursor: none; &:hover { cursor: none; } }
+
     .custom-cursor {
         position: absolute;
         z-index: 100000000000000;
