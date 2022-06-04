@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img :src="myLogo">
+    <img :src="myLogo" id="myLogo">
     
     <!-- box menu -->
     <div class="menu">
@@ -92,7 +92,7 @@ export default {
     min-height: 500px;
     
     // background
-    img {
+    #myLogo {
       width: 300px;
       height: 300px;
       position: absolute;
