@@ -86,7 +86,7 @@ export default {
                 }
 
                 p {
-                    font-size: 1.05em;
+                    font-size: 1.2em;
                 }
 
                 span {
@@ -97,11 +97,12 @@ export default {
                     background-color: $color3;
                     color: $color5;
                     margin-left: 5px;
+                        font-size: 1.2em;
                     margin-right: 5px;
 
                     &.social {
                         margin: 10px 5px 30px 5px;
-                        font-size: 1.2em;
+                        font-size: 1.3em;
                     }
 
                     &:hover {
@@ -147,11 +148,11 @@ export default {
                     padding: 4px 7px;
                     margin: 0 7px 7px 0;
                     display: inline-block;
-                    font-size: .9em;
+                    font-size: 1.1em;
 
                     img {
-                        width: 20px;
-                        height: 20px;
+                        width: 25px;
+                        height: 25px;
                     }
                 }
 
