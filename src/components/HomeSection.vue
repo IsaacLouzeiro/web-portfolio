@@ -18,10 +18,10 @@
         <div class="col-lg-4 col-12 areaLateral d-flex align-items-center justify-content-center">
             <section class="py-3">
                 <img src="../assets/img/img-isaac.jpeg" alt="My Image" class="imgIsaac">
-                <div class="pt-3">
+                <div class="pt-4">
                     <img :src="linkLogo" alt="My Logo" class="myLogo">
                 </div>
-                <h2 class="mt-3 mb-1">{{ myName }}</h2>
+                <h2 class="mt-1 mb-1">{{ myName }}</h2>
                 <span class="mb-5 fst-italic">{{ profession }}</span><br>
 
 
@@ -172,7 +172,7 @@ export default {
                 width: 100%;
                 max-width: 60px;
                 position: relative;
-                filter: drop-shadow(0 0 .6rem rgba($color3, .3));
+                // filter: drop-shadow(0 0 .6rem rgba($color3, .3));
                 animation: loading 1.7s linear infinite;
             }
 
