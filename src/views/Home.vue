@@ -116,7 +116,7 @@ export default {
                 },
                 {
                     linkImg: require('../assets/img/logo-sass.webp'),
-                    name: 'SASS'
+                    name: 'SCSS'
                 },
                 {
                     linkImg: require('../assets/img/logo-javascript.webp'),
@@ -164,7 +164,7 @@ export default {
                     description: 'The website was made for "Alivisual", a producer of audiovisual & photography from São Paulo.',
                     link: 'https://www.alivisual.com.br/',
                     repo: '',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JavaScript ] [ PHP ]'
+                    technologies: '[ HTML5 ] [ SCSS ] [ Bootstrap ] [ JavaScript ] [ PHP ]'
                 },
                 {
                     id: 2,
@@ -174,20 +174,30 @@ export default {
                     description: 'Photograpy portfolio developed for the photographer Leandro Louzeiro.',
                     link: 'https://leandrolouzeiro.com.br/',
                     repo: 'https://github.com/IsaacLouzeiro/website-portfolio-fotografia2',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
+                    technologies: '[ HTML5 ] [ SCSS ] [ Bootstrap ] [ Vue Js ]'
 
                 }
             ],
             projPersonal: [
                 {
                     id: 0,
+                    alt: "Image Open Spotify Clone",
+                    nome: "Open Spotify Clone",
+                    img: require('../assets/img/spotifyclone.webp'),
+                    description: 'Spotify Web Audio Player in Vue Js, created to practice my abilities.',
+                    link: 'https://spotify-copia.netlify.app/',
+                    repo: 'https://github.com/IsaacLouzeiro/spotify-vue-clone',
+                    technologies: '[ HTML5 ] [ SCSS ] [ Bootstrap ] [ Vue Js ]'
+                },
+                {
+                    id: 0.1,
                     alt: "Image My Website Portfolio Website",
                     nome: "My Website Portfolio",
                     img: require('../assets/img/webportfolio.webp'),
                     description: 'My website portfolio, for the purpose of promote my work as a Front-end Developer. Version 2.0.',
                     link: 'https://isaaclouzeiro.dev.br/',
                     repo: 'https://github.com/IsaacLouzeiro/web-portfolio',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
+                    technologies: '[ HTML5 ] [ SCSS ] [ Bootstrap ] [ Vue Js ]'
                 },
                 {
                     id: 1.1,
@@ -197,7 +207,7 @@ export default {
                     description: 'Showing my projects of web design, UI/UX and CSS arts, mostly of my codepen.',
                     link: 'https://webdesigngallery.netlify.app/',
                     repo: 'https://github.com/IsaacLouzeiro/webdesign-gallery',
-                    technologies: '[ HTML5 ] [ SASS ] [ Vue Js ]'
+                    technologies: '[ HTML5 ] [ SCSS ] [ Vue Js ]'
                 },
                 {
                     id: 2.1,
@@ -207,7 +217,7 @@ export default {
                     description: 'Web resume, a relaxed way of show my professional side.',
                     link: 'https://isaac-resume.firebaseapp.com/',
                     repo: 'https://github.com/IsaacLouzeiro/resume',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ Vue Js ]'
+                    technologies: '[ HTML5 ] [ SCSS ] [ Bootstrap ] [ Vue Js ]'
                 },
                 {
                     id: 3.1,
@@ -257,7 +267,7 @@ export default {
                     description: 'The website was made with the intention of using the Instagram Basic Display API from Facebook Developer for study purposes.',
                     link: 'https://isaaclouzeiro.github.io/apiinstagram/',
                     repo: 'https://github.com/IsaacLouzeiro/apiinstagram',
-                    technologies: '[ HTML5 ] [ SASS ] [ Bootstrap ] [ JQuery ]'
+                    technologies: '[ HTML5 ] [ SCSS ] [ Bootstrap ] [ JQuery ]'
                 }
             ],
             linkWebsite: 'Visit website',
